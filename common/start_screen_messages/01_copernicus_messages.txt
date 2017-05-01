@@ -1,0 +1,78 @@
+# Start Screen Messages
+# Parameters:
+#   trigger, a trigger with country which decides if this is a valid part. Empty will be treated as always=yes.
+#   localization, a key to a localized string.
+#	location, decides where this chunk of text is located in the description, cannot be negative.
+
+#European Union
+part = {
+        location = 0
+        localization = "START_SCREEN_EU"	
+        trigger = {
+               has_country_flag = europe
+        }		
+}
+#NAFTA
+part = {
+        location = 0
+        localization = "START_SCREEN_NAFTA"	
+        trigger = {
+               has_country_flag = north_america
+        }		
+}
+#MERCOSUR
+part = {
+        location = 0
+        localization = "START_SCREEN_MERCOSUR"	
+        trigger = {
+               has_country_flag = south_america
+        }		
+}
+#African Union
+part = {
+        location = 0
+        localization = "START_SCREEN_AFRICA"	
+        trigger = {
+               has_country_flag = africa
+        }		
+}
+#SAARC
+part = {
+        location = 0
+        localization = "START_SCREEN_SAARC"	
+        trigger = {
+               has_country_flag = south_asia
+        }		
+}
+#Pacific Compact
+part = {
+        location = 0
+        localization = "START_SCREEN_PACIFIC"	
+        trigger = {
+               has_country_flag = pacific_compact
+        }		
+}
+#Orbitech
+part = {
+        location = 0
+        localization = "START_SCREEN_ORBITECH"	
+        trigger = {
+               has_country_flag = orbitech
+        }		
+}
+#Alphacorp
+part = {
+        location = 0
+        localization = "START_SCREEN_ALPHACORP"	
+        trigger = {
+               has_country_flag = alphacorp
+        }		
+}
+#Mars Congress
+part = {
+        location = 0
+        localization = "START_SCREEN_MARS"	
+        trigger = {
+               has_country_flag = mars
+        }		
+}

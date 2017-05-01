@@ -1,0 +1,99 @@
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 10000
+			has_country_flag = europe
+		}
+	}
+	format = "European Union"
+	noun = "[This.GetSpeciesName]"
+}
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 10000
+			has_country_flag = africa
+		}
+	}
+	format = "African Union"
+	noun = "[This.GetSpeciesName]"
+}
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 10000
+			has_country_flag = north_america
+		}
+	}
+	format = "NAFTA"
+	noun = "[This.GetSpeciesName]"
+}
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 10000
+			has_country_flag = south_america
+		}
+	}
+	format = "MERCOSUR"
+	noun = "[This.GetSpeciesName]"
+}
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 10000
+			has_country_flag = south_asia
+		}
+	}
+	format = "SAARC"
+	noun = "[This.GetSpeciesName]"
+}
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 10000
+			has_country_flag = pacific_compact
+		}
+	}
+	format = "Pacific Compact"
+	noun = "[This.GetSpeciesName]"
+}
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 10000
+			has_country_flag = orbitech
+		}
+	}
+	format = "Orbitech"
+	noun = "[This.GetSpeciesName]"
+}
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 10000
+			has_country_flag = alphacorp
+		}
+	}
+	format = "AlphaCorp"
+	noun = "[This.GetSpeciesName]"
+}
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 10000
+			has_country_flag = mars
+		}
+	}
+	format = "Mars Congress"
+	noun = "[This.GetSpeciesName]"
+}

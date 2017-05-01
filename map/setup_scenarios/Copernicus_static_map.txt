@@ -1,0 +1,83 @@
+static_galaxy_scenario = {
+	name = "Copernicus"
+	priority = 0
+	colonizable_planet_odds = 1.0
+    num_empires = { min = 1 max = 9 }
+    num_empire_default = 8
+	advanced_empire_default = 0
+	fallen_empire_default = 0
+	fallen_empire_max = 0
+	core_radius = 55
+	random_hyperlanes = no
+	default = yes
+	
+	#Major Solar System bodies
+	system = { id = "0" name = "The Sun" position = { x = 1 y = 0 } initializer = "sun_initializer"  }
+	system = { id = "1" name = "Earth" position = { x = -6 y = 0 } initializer = "earth_initializer" }
+	system = { id = "2" name = "Mercury" position = { x = 1 y = -5 } initializer = "mercury_initializer"  }
+	system = { id = "3" name = "Mars" position = { x = 1 y = 5 } initializer = "mars_initializer" }
+	system = { id = "4" name = "1 Ceres" position = { x = 5 y = 9 } initializer = "ceres_initializer" }
+	system = { id = "5" name = "4 Vesta" position = { x = -8 y = 5 } initializer = "vesta_initializer" }
+	system = { id = "6" name = "Jupiter" position = { x = 31 y = 0 } initializer = "jupiter_initializer" }
+	system = { id = "7" name = "Saturn" position = { x = 23 y = 22 } initializer = "saturn_initializer" }
+	system = { id = "8" name = "Uranus" position = { x = 23 y = -22 } initializer = "uranus_initializer" }
+	system = { id = "9" name = "Neptune" position = { x = -29 y = 0 } initializer = "neptune_initializer" }
+	system = { id = "10" name = "Pluto" position = { x = 1 y = -40 } initializer = "pluto_initializer" }
+	system = { id = "11" name = "Eris" position = { x = -27 y = -28 } initializer = "eris_initializer" }
+	
+	#Additional Main Belt asteroids
+	system = { id = "12" name = "2 Pallas" position = { x = 9 y = -6 } initializer = "pallas_initializer" }
+	system = { id = "13" name = "10 Hygiea" position = { x = -9 y = -2 } initializer = "hygiea_initializer" }
+	system = { id = "14" name = "704 Interamnia" position = { x = 8 y = 8 } initializer = "interamnia_initializer" }
+	system = { id = "15" name = "52 Europa" position = { x = 4 y = 10 } initializer = "europa_initializer" }
+	system = { id = "16" name = "511 Davida" position = { x = -5 y = 8 } initializer = "davida_initializer" }
+	system = { id = "17" name = "87 Sylvia" position = { x = -7 y = -3 } initializer = "sylvia_initializer" }
+	system = { id = "18" name = "65 Cybele" position = { x = 10 y = -4 } initializer = "cybele_initializer" }
+	system = { id = "19" name = "15 Eunomia" position = { x = 2 y = 10 } initializer = "eunomia_initializer" }
+	system = { id = "20" name = "3 Juno" position = { x = -1 y = -10 } initializer = "juno_initializer" }
+	system = { id = "21" name = "31 Euphrosyne" position = { x = 11 y = -1 } initializer = "euphrosyne_initializer" }
+	
+	#Additional KBOs
+	system = { id = "22" name = "136472 Makemake" position = { x = -19 y = -34 } initializer = "makemake_initializer" }
+	system = { id = "23" name = "136108 Haumea" position = { x = 31 y = 26 } initializer = "haumea_initializer" }
+	system = { id = "24" name = "90482 Orcus" position = { x = 11 y = 38 } initializer = "orcus_initializer" }
+	system = { id = "25" name = "50000 Quaoar" position = { x = 1 y = 40 } initializer = "quaoar_initializer" }
+	
+	
+	#Alpha Centauri system
+	#Alpha Centauri A and companions
+	system = { id = "26" name = "Alpha Centauri A" position = { x = 110 y = 200} initializer = "acena_initializer" }
+	system = { id = "27" name = "Alpha Centauri Af" position = { x = 113 y = 200} initializer = "acenaf_initializer" }
+	system = { id = "28" name = "Alpha Centauri Ae" position = { x = 110 y = 205} initializer = "acenae_initializer" }
+	system = { id = "29" name = "Alpha Centauri Ab" position = { x = 110 y = 210} initializer = "acenab_initializer" }
+	system = { id = "30" name = "Alpha Centauri Ac" position = { x = 100 y = 200} initializer = "acenac_initializer" }
+	system = { id = "31" name = "Alpha Centauri Ad" position = { x = 110 y = 190} initializer = "acenad_initializer" }
+	
+	#Alpha Centauri B and companions
+	system = { id = "32" name = "Alpha Centauri B" position = { x = 110 y = 220} initializer = "acenb_initializer" }
+	system = { id = "33" name = "Alpha Centauri Bb" position = { x = 107 y = 225} initializer = "acenbb_initializer" }
+	
+	#Proxima Centauri and companions
+	system = { id = "34" name = "Proxima Centauri" position = { x = 70 y = 180} initializer = "proxima_initializer" }
+	system = { id = "35" name = "Proxima Centauri b" position = { x = 65 y = 180} initializer = "proximab_initializer" }
+	system = { id = "36" name = "Proxima Centauri c" position = { x = 58 y = 180} initializer = "proximac_initializer" }
+	system = { id = "37" name = "Proxima Centauri d" position = { x = 82 y = 180} initializer = "proximad_initializer" }
+	system = { id = "38" name = "Proxima Centauri e" position = { x = 82 y = 192} initializer = "proximae_initializer" }
+	system = { id = "39" name = "Proxima Centauri f" position = { x = 70 y = 192} initializer = "proximaf_initializer" }
+	system = { id = "40" name = "Proxima Centauri g" position = { x = 70 y = 168} initializer = "proximag_initializer" }
+	system = { id = "41" name = "Proxima Centauri h" position = { x = 62 y = 172} initializer = "proximah_initializer" }
+	system = { id = "42" name = "Proxima Centauri i" position = { x = 62 y = 188} initializer = "proximai_initializer" }
+	system = { id = "43" name = "Proxima Centauri j" position = { x = 78 y = 172} initializer = "proximaj_initializer" }
+	system = { id = "44" name = "Proxima Centauri k" position = { x = 78 y = 188} initializer = "proximak_initializer" }
+	
+	#Special initializers for starting systems
+	system = { id = "45" name = "Earth" position = { x = 400 y = -400 } initializer = "wplanet1_initializer" spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = europe } } }
+	system = { id = "46" name = "Berth" position = { x = 400 y = -400 } initializer = "wplanet2_initializer" spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = africa } } }
+	system = { id = "47" name = "Merth" position = { x = 400 y = -400 } initializer = "wplanet3_initializer" spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = pacific_compact } } }
+	system = { id = "48" name = "Serth" position = { x = 400 y = -400 } initializer = "wplanet4_initializer" spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = south_america } } }
+	system = { id = "49" name = "Qwerth" position = { x = 400 y = -400 } initializer = "wplanet5_initializer" spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = south_asia } } }
+	system = { id = "50" name = "Plerf" position = { x = 400 y = -400 } initializer = "wplanet6_initializer" spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = orbitech } } }
+	system = { id = "51" name = "Mzerf" position = { x = 400 y = -400 } initializer = "wplanet7_initializer" spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = alphacorp } } }
+	system = { id = "52" name = "Mars" position = { x = 400 y = -400 } initializer = "wplanet8_initializer"  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = mars } } }
+	system = { id = "53" name = "Bwaggle" position = { x = 400 y = -400 } initializer = "wplanet9_initializer" spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = north_america } } }
+}

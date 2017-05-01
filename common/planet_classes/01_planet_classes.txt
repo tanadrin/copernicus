@@ -1,0 +1,860 @@
+# Planet Variables
+
+@planet_standard_scale = 11
+@habitable_planet_max_size = 25
+@habitable_planet_min_size = 12
+@habitable_moon_max_size = 15
+@habitable_moon_min_size = 10
+@habitable_min_distance = 60
+@habitable_max_distance = 100
+@habitable_spawn_odds = 1
+
+###Planet initializers for stars
+
+#G stars
+pc_gc_star = {
+	entity = "g_star_class_star_entity"
+	entity_scale = 20.0
+	picture = "pc_g_star"
+
+	atmosphere_color 		= hsv { 0.09 0.7 0.7 }
+	atmosphere_intensity 	= 0.5
+	atmosphere_width 		= 1.9	
+	
+	star = yes
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	planet_size = { min = 20 max = 35 }
+	
+	colonizable = no
+}
+#K stars
+pc_kc_star = {
+	entity = "f_star_class_star_entity"
+	entity_scale = 20.0
+	picture = "pc_f_star"
+
+	atmosphere_color 		= hsv { 0.56 0.4 0.7 }
+	atmosphere_intensity 	= 0.5
+	atmosphere_width 		= 1.2
+	
+	star = yes
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	planet_size = { min = 20 max = 35 }
+	
+	colonizable = no
+}
+#M stars
+pc_mc_star = {
+	entity = "k_star_class_star_entity"
+	entity_scale = 20.0
+	picture = "pc_k_star"
+
+	atmosphere_color 		= hsv { 0.06 0.65 0.7 }
+	atmosphere_intensity 	= 0.6
+	atmosphere_width 		= 1.25
+	
+	star = yes
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	planet_size = { min = 20 max = 35 }
+	
+	colonizable = no
+}
+#L, T, Y dwarfs
+pc_lc_star = {
+	entity = "m_star_class_star_entity"
+	entity_scale = 20.0
+	picture = "pc_m_star"
+
+	atmosphere_color 		= hsv { 0.01 0.9 0.6 }
+	atmosphere_intensity 	= 0.10
+	atmosphere_width 		= 1.0	
+	
+	star = yes
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	planet_size = { min = 20 max = 35 }
+	
+	colonizable = no
+}
+
+###Planet initializers for planets
+###Special initializers for graphically unique worlds
+#Earth
+pc_earth = {
+	entity = "continental_planet"
+	entity_scale = 20
+	icon_frame = 5
+
+	atmosphere_color 		= hsv { 0.59 0.45 0.95 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	enable_tilt = no
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	planet_size = { min = 20 max = 35 }
+	
+	colonizable = no
+}
+#Moon
+pc_moon = {
+	entity = "cold_barren_planet"
+	entity_scale = 10
+	icon_frame = 9
+
+	atmosphere_color 		= hsv { 0.59 0.45 0.95 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	enable_tilt = no
+	
+	chance_of_ring = 0
+	
+	planet_size = { min = 12 max = 30 }
+	moon_size = { min = 6 max = 10 }
+	
+	colonizable = no
+}
+#Mars
+pc_mars = {
+	entity = "barren_planet"
+	entity_scale = @planet_standard_scale
+	icon_frame = 10
+
+	atmosphere_color 		= hsv { 0.59 0.45 0.95 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	enable_tilt = no
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	planet_size = { min = 12 max = 30 }
+	moon_size = { min = 6 max = 10 }
+	
+	colonizable = no
+}
+#Jupiter
+pc_jupiter = {
+	entity = "gas_giant"
+	entity_scale = @planet_standard_scale
+	icon_frame = 14
+
+	atmosphere_color 		= hsv { 0.59 0.45 0.95 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	enable_tilt = no
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	planet_size = { min = 12 max = 30 }
+	moon_size = { min = 6 max = 10 }
+	
+	colonizable = no
+}
+###Initializers for graphically generic worlds
+#Earthlike (uninhabitable)
+pc_earthlike = {
+	entity = "continental_planet"
+	entity_scale = @planet_standard_scale
+	icon_frame = 4
+
+	atmosphere_color 		= hsv { 0.59 0.45 0.95 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+	
+	enable_tilt = no
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	colonizable = no
+}
+#Rocky, airless (habitable)
+pc_rocky_airless_hab = {
+	entity = "cold_barren_planet"
+	entity_scale = @planet_standard_scale
+	icon_frame = 9
+
+	atmosphere_color 		= hsv { 0.59 0.45 0.95 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+	
+	enable_tilt = no
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	planet_size = { min = 9 max = 25 }
+	moon_size = { min = 5 max = 15 }
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	colonizable = yes
+}
+#Rocky, atmosphere (habitable)
+pc_rocky_atmosphere_hab = {
+	entity = "barren_planet"
+	entity_scale = @planet_standard_scale
+	icon_frame = 10
+
+	atmosphere_color 		= hsv { 0.59 0.45 0.95 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+	
+	enable_tilt = no
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	planet_size = { min = 9 max = 25 }
+	moon_size = { min = 5 max = 15 }
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	colonizable = yes
+}
+#Icy, large, airless (habitable)
+pc_icy_airless_hab = {
+	entity = "arctic_planet"
+	entity_scale = @planet_standard_scale
+	icon_frame = 7
+
+	atmosphere_color 		= hsv { 0.59 0.45 0.95 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+	
+	enable_tilt = no
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	planet_size = { min = 9 max = 25 }
+	moon_size = { min = 5 max = 15 }
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	colonizable = yes
+}
+#Icy with atmosphere (habitable)
+pc_icy_atmosphere_hab = {
+	entity = "arctic_planet"
+	entity_scale = @planet_standard_scale
+	icon_frame = 1
+
+	atmosphere_color 		= hsv { 0.59 0.45 0.95 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+	
+	enable_tilt = no
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	planet_size = { min = 9 max = 25 }
+	moon_size = { min = 5 max = 15 }
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	colonizable = yes
+}
+#Rocky asteroid (habitable)
+pc_asteroid_hab = {
+	entity = "asteroid"
+	entity_scale = 1.5
+	icon_frame = 18
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	enable_tilt = no
+	
+	planet_size = { min = 5 max = 15 }
+	moon_size = { min = 5 max = 15 }
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	colonizable = yes
+}
+#Icy asteroid (habitable)
+pc_iceteroid_hab = {
+	entity = "asteroid"
+	entity_scale = 1.5
+	icon_frame = 18
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	planet_size = { min = 5 max = 15 }
+	moon_size = { min = 5 max = 15 }
+	
+	enable_tilt = no
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	colonizable = yes
+}
+#Gas giant (uninhabitable)
+pc_jovian = {
+	entity = "gas_giant"
+	entity_scale = 14
+	icon_frame = 14
+	
+	atmosphere_color 		= hsv { 0.1 0.15 1.1 }		#DONE
+	atmosphere_intensity 	= 1.1
+	atmosphere_width 		= 0.5
+	
+	planet_size = { min = 5 max = 15 }
+	moon_size = { min = 5 max = 15 }
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	enable_tilt = no
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0.1
+	
+	colonizable = no
+}
+#Uranus (uninhabitable)
+pc_uranus = {
+	entity = "gas_giant"
+	entity_scale = 20
+	icon_frame = 14
+
+	atmosphere_color 		= hsv { 0.59 0.45 0.95 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	planet_size = { min = 5 max = 15 }
+	moon_size = { min = 5 max = 15 }
+	
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	colonizable = no
+}
+#Ice giant (uninhabitable)
+pc_neptunian = {
+	entity = "gas_giant"
+	entity_scale = @planet_standard_scale
+	icon_frame = 14
+
+	atmosphere_color 		= hsv { 0.49 0.45 0.95 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	planet_size = { min = 5 max = 15 }
+	moon_size = { min = 5 max = 15 }
+	
+	enable_tilt = no
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	colonizable = no
+}
+#Rocky, airless (uninhabitable)
+pc_rocky_airless = {
+	entity = "cold_barren_planet"
+	entity_scale = @planet_standard_scale
+	icon_frame = 9
+
+	atmosphere_color 		= hsv { 0.59 0.45 0.95 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+	
+	enable_tilt = no
+	
+	planet_size = { min = 5 max = 15 }
+	moon_size = { min = 5 max = 15 }
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	colonizable = no
+}
+#Rocky, atmosphere (uninhabitable)
+pc_rocky_atmosphere = {
+	entity = "barren_planet"
+	entity_scale = @planet_standard_scale
+	icon_frame = 10
+
+	atmosphere_color 		= hsv { 0.59 0.45 0.95 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+	
+	enable_tilt = no
+	
+	planet_size = { min = 5 max = 15 }
+	moon_size = { min = 5 max = 15 }
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	colonizable = no
+}
+#Icy, large, airless (uninhabitable)
+pc_icy_airless = {
+	entity = "arctic_planet"
+	entity_scale = @planet_standard_scale
+	icon_frame = 7
+
+	atmosphere_color 		= hsv { 0.59 0.45 0.95 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+	
+	enable_tilt = no
+	
+	planet_size = { min = 5 max = 15 }
+	moon_size = { min = 5 max = 15 }
+
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	colonizable = no
+}
+#Icy with atmosphere (uninhabitable)
+pc_icy_atmosphere = {
+	entity = "arctic_planet"
+	entity_scale = @planet_standard_scale
+	icon_frame = 1
+
+	atmosphere_color 		= hsv { 0.59 0.45 0.95 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+	
+	enable_tilt = no
+	
+	planet_size = { min = 5 max = 15 }
+	moon_size = { min = 5 max = 15 }
+
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	colonizable = no
+}
+#Rocky asteroid (uninhabitable)
+pc_asteroidc = {
+	entity = "asteroid"
+	entity_scale = 1.5
+	icon_frame = 18
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	planet_size = { min = 5 max = 15 }
+	moon_size = { min = 5 max = 15 }
+	
+	enable_tilt = no
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	colonizable = no
+}
+#Icy asteroid (uninhabitable)
+pc_iceteroid = {
+	entity = "asteroid"
+	entity_scale = 1.5
+	icon_frame = 18
+
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	planet_size = { min = 5 max = 15 }
+	moon_size = { min = 5 max = 15 }
+	
+	enable_tilt = no
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	colonizable = no
+}
+
+###Planet initializers for regions
+#Temperate Earthlike region
+pc_temperate_region = {
+	entity = none
+	entity_scale = @planet_standard_scale
+	icon_frame = 4
+	
+	climate = "wet"
+
+	atmosphere_color 		= hsv { 0.59 0.45 0.95 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+	
+	enable_tilt = no
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	planet_size = { min = 12 max = 25 }
+	moon_size = { min = 12 max = 25 }
+	
+	colonizable = yes
+	orbit_lines = no
+}
+#Warm Earthlike region
+pc_warm_region = {
+	entity = none
+	entity_scale = @planet_standard_scale
+	icon_frame = 5
+	
+	climate = "wet"
+
+	atmosphere_color 		= hsv { 0.59 0.45 0.95 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+	
+	enable_tilt = no
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	planet_size = { min = 12 max = 25 }
+	moon_size = { min = 12 max = 25 }
+	
+	colonizable = yes
+	orbit_lines = no
+}
+#Cold Earthlike or near-Earthlike region
+pc_cold_region = {
+	entity = none
+	entity_scale = @planet_standard_scale
+	icon_frame = 7
+	
+	climate = "cold"
+	
+	atmosphere_color 		= hsv { 0.48 0.15 0.8 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_arctic.dds"
+	
+	enable_tilt = no
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	planet_size = { min = 12 max = 25 }
+	moon_size = { min = 12 max = 25 }
+	
+	colonizable = yes
+	orbit_lines = no
+}
+#Airless rocky region
+pc_rocky_airless_region = {
+	entity = none
+	entity_scale = @planet_standard_scale
+	icon_frame = 9
+	
+	climate = "cold"
+	
+	atmosphere_color 		= hsv { 0.48 0.15 0.8 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_arctic.dds"
+	
+	enable_tilt = no
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	planet_size = { min = 12 max = 25 }
+	moon_size = { min = 12 max = 25 }
+	
+	colonizable = yes
+	orbit_lines = no
+}
+#Airless icy region
+pc_icy_airless_region = {
+	entity = none
+	entity_scale = @planet_standard_scale
+	icon_frame = 9
+	
+	climate = "cold"
+	
+	atmosphere_color 		= hsv { 0.48 0.15 0.8 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_arctic.dds"
+	
+	enable_tilt = no
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	planet_size = { min = 12 max = 25 }
+	moon_size = { min = 12 max = 25 }
+	
+	colonizable = yes
+	orbit_lines = no
+}
+#Rocky, atmosphere region
+pc_rocky_atmosphere_region = {
+	entity = none
+	entity_scale = @planet_standard_scale
+	icon_frame = 10
+	
+	climate = "cold"
+	
+	atmosphere_color 		= hsv { 0.48 0.15 0.8 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_arctic.dds"
+	
+	enable_tilt = no
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	planet_size = { min = 12 max = 25 }
+	moon_size = { min = 12 max = 25 }
+	
+	colonizable = yes
+	orbit_lines = no
+}
+#Icy, atmosphere region
+pc_icy_atmosphere_region = {
+	entity = none
+	entity_scale = @planet_standard_scale
+	icon_frame = 1
+	
+	climate = "cold"
+	
+	atmosphere_color 		= hsv { 0.48 0.15 0.8 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_arctic.dds"
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	enable_tilt = no
+	
+	chance_of_ring = 0
+	
+	planet_size = { min = 12 max = 25 }
+	moon_size = { min = 12 max = 25 }
+	
+	colonizable = yes
+	orbit_lines = no
+}

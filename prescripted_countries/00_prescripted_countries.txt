@@ -1,0 +1,569 @@
+EU = {
+	name = "European Union"
+	spawn_enabled = always
+	ignore_portrait_duplication = yes
+	
+	name_list = "HUM3"
+	ship_prefix = "EMV"
+	
+	species_name = "Human"
+	species_plural = "Humans"
+	species_adjective = "Human"
+	species_class = "HUM"
+	trait = "trait_quick_learners"
+	trait = "trait_nomadic"
+	portrait = "human"
+	adjective = "European"
+	
+	authority = "auth_democratic"
+	civics = { "civic_parliamentary_system" "civic_idealistic_foundation" }
+	government = gov_representative_democracy
+	
+	ethic = "ethic_xenophile"
+	ethic = "ethic_fanatic_egalitarian"
+
+	flags = { europe custom_start_screen }
+	
+	weapon = "tech_missiles_1"
+	ftl = warp
+	
+	planet_name = "Brussels"
+	planet_class = "pc_warm_region"
+	initializer = "wtplanet1_initializer"
+	system_name = "Belgium"
+	
+	graphical_culture = "mammalian_01"
+	city_graphical_culture = "mammalian_01"
+	
+	empire_flag = {
+		icon= {
+			category = "spherical"
+			file = "flag_spherical_2.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"dark_blue"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler = {
+		name = "Sara Aydin"
+		gender = female
+		portrait = "human_female_01"
+		texture = 0
+		hair = 1
+		clothes = 3
+	}
+}
+AU = {
+	name = "African Union"
+	spawn_enabled = always
+	ignore_portrait_duplication = yes
+	
+	name_list = "HUM3"
+	ship_prefix = "AUS"
+	
+	species_name = "Human"
+	species_plural = "Humans"
+	species_adjective = "Human"
+	species_class = "HUM"
+	trait = "trait_quick_learners"
+	trait = "trait_nomadic"	
+	portrait = "human"
+	adjective = "African"
+	
+	authority = "auth_oligarchic"
+	civics = { "civic_environmentalist" "civic_meritocracy" }
+	government = gov_irenic_bureaucracy
+	
+	ethic = "ethic_pacifist"
+	ethic = "ethic_egalitarian"
+	ethic = "ethic_materialist"
+
+	flags = { africa custom_start_screen }
+	
+	weapon = "tech_mass_drivers_1"
+	ftl = warp
+	
+	planet_name = "Abuja"
+	planet_class = "pc_warm_region"
+	initializer = "wtplanet2_initializer"
+	system_name = "Blerple"
+	
+	graphical_culture = "mammalian_01"
+	city_graphical_culture = "mammalian_01"
+	
+	empire_flag = {
+		icon= {
+			category = "ornate"
+			file = "flag_ornate_14.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"dark_green"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler = {
+		name = "Desmond Nzo"
+		gender = male
+		portrait = "human_male_05"
+		texture = 0
+		hair = 8
+		clothes = 0
+	}
+}
+NAFTA = {
+	name = "NAFTA"
+	spawn_enabled = always
+	ignore_portrait_duplication = yes
+	
+	name_list = "HUM3"
+	ship_prefix = "USS"
+	
+	species_name = "Human"
+	species_plural = "Humans"
+	species_adjective = "Human"
+	species_class = "HUM"
+	trait = "trait_quick_learners"
+	trait = "trait_nomadic"	
+	portrait = "human"
+	adjective = "North American"
+	
+	authority = "auth_oligarchic"
+	civics = { "civic_police_state" "civic_aristocratic_elite" }
+	government = gov_executive_committee
+	
+	ethic = "ethic_fanatic_materialist"
+	ethic = "ethic_authoritarian"
+
+	flags = { north_america custom_start_screen }
+	
+	weapon = "tech_missiles_1"
+	ftl = warp
+	
+	planet_name = "Los Angeles"
+	planet_class = "pc_warm_region"
+	initializer = "wtplanet3_initializer"
+	system_name = "California SEZ"
+	
+	graphical_culture = "mammalian_01"
+	city_graphical_culture = "mammalian_01"
+	
+	empire_flag = {
+		icon= {
+			category = "human"
+			file = "flag_human_4.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"red"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler = {
+		name = "Lukas Kirchner"
+		gender = male
+		portrait = "human_male_03"
+		texture = 0
+		hair = 2
+		clothes = 1
+	}
+}
+MERCOSUR = {
+	name = "MERCOSUR"
+	spawn_enabled = always
+	ignore_portrait_duplication = yes
+	
+	name_list = "HUM3"
+	ship_prefix = "VDS"
+	
+	species_name = "Human"
+	species_plural = "Humans"
+	species_adjective = "Human"
+	species_class = "HUM"
+	trait = "trait_quick_learners"
+	trait = "trait_nomadic"	
+	portrait = "human"
+	adjective = "South American"
+	
+	authority = "auth_democratic"
+	civics = { "civic_distinguished_admiralty" "civic_environmentalist" }
+	government = gov_military_commissariat
+	
+	ethic = "ethic_spiritualist"
+	ethic = "ethic_militarist"
+	ethic = "ethic_egalitarian"
+
+	flags = { south_america custom_start_screen }
+	
+	weapon = "tech_missiles_1"
+	ftl = warp
+	
+	planet_name = "Buenos Aires"
+	planet_class = "pc_warm_region"
+	initializer = "wtplanet4_initializer"
+	system_name = "Argentina"
+	
+	graphical_culture = "mammalian_01"
+	city_graphical_culture = "mammalian_01"
+	
+	empire_flag = {
+		icon= {
+			category = "pointy"
+			file = "flag_pointy_5.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"orange"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler = {
+		name = "Silvia Moralez"
+		gender = female
+		portrait = "human_female_02"
+		texture = 0
+		hair = 3
+		clothes = 4
+	}
+}
+SAARC = {
+	name = "SAARC"
+	spawn_enabled = always
+	ignore_portrait_duplication = yes
+	
+	name_list = "HUM3"
+	ship_prefix = "SRC"
+	
+	species_name = "Human"
+	species_plural = "Humans"
+	species_adjective = "Human"
+	species_class = "HUM"
+	trait = "trait_quick_learners"
+	trait = "trait_nomadic"	
+	portrait = "human"
+	adjective = "South Asian"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_nationalistic_zeal" "civic_warrior_culture" }
+	government = gov_martial_dictatorship
+	
+	ethic = "ethic_fanatic_militarist"
+	ethic = "ethic_materialist"
+
+	flags = { south_asia custom_start_screen }
+	
+	weapon = "tech_missiles_1"
+	ftl = warp
+	
+	planet_name = "New Hyderabad"
+	planet_class = "pc_warm_region"
+	initializer = "wtplanet5_initializer"
+	system_name = "Sindh"
+	
+	graphical_culture = "mammalian_01"
+	city_graphical_culture = "mammalian_01"
+	
+	empire_flag = {
+		icon= {
+			category = "blocky"
+			file = "flag_blocky_9.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"red_orange"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler = {
+		name = "Iskander Sajjad"
+		gender = male
+		portrait = "human_male_01"
+		texture = 0
+		hair = 0
+		clothes = 3
+	}
+}
+PC = {
+	name = "Pacific Compact"
+	spawn_enabled = always
+	ignore_portrait_duplication = yes
+	
+	name_list = "HUM3"
+	ship_prefix = "PCR"
+	
+	species_name = "Human"
+	species_plural = "Humans"
+	species_adjective = "Human"
+	species_class = "HUM"
+	trait = "trait_quick_learners"
+	trait = "trait_nomadic"	
+	portrait = "human"
+	adjective = "Pacific"
+	
+	authority = "auth_oligarchic"
+	civics = { "civic_mining_guilds" "civic_agrarian_idyll" }
+	government = gov_executive_committee
+	
+	ethic = "ethic_fanatic_materialist"
+	ethic = "ethic_pacifist"
+
+	flags = { pacific_compact custom_start_screen }
+	
+	weapon = "tech_mass_drivers_1"
+	ftl = warp
+	
+	planet_name = "Shanghai"
+	planet_class = "pc_warm_region"
+	initializer = "wtplanet6_initializer"
+	system_name = "Yangtze State"
+	
+	graphical_culture = "mammalian_01"
+	city_graphical_culture = "mammalian_01"
+	
+	empire_flag = {
+		icon= {
+			category = "human"
+			file = "flag_human_5.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"turquoise"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler = {
+		name = "Han Qing-Jao"
+		gender = female
+		portrait = "human_female_02"
+		texture = 0
+		hair = 2
+		clothes = 2
+	}
+}
+orbitech = {
+	name = "Orbitech"
+	spawn_enabled = always
+	ignore_portrait_duplication = yes
+	
+	name_list = "HUM3"
+	ship_prefix = "OT"
+	
+	species_name = "Human"
+	species_plural = "Humans"
+	species_adjective = "Human"
+	species_class = "HUM"
+	trait = "trait_quick_learners"
+	trait = "trait_nomadic"	
+	portrait = "human"
+	adjective = "Orbitech"
+	
+	authority = "auth_oligarchic"
+	civics = { "civic_corporate_dominion" "civic_meritocracy" }
+	government = gov_megacorporation
+	
+	ethic = "ethic_fanatic_materialist"
+	ethic = "ethic_egalitarian"
+
+	flags = { orbitech custom_start_screen }
+	
+	weapon = "tech_missiles_1"
+	ftl = warp
+	
+	planet_name = "Cologne"
+	planet_class = "pc_warm_region"
+	initializer = "wtplanet7_initializer"
+	system_name = "Nordrhein-Westfalen"
+	
+	graphical_culture = "mammalian_01"
+	city_graphical_culture = "mammalian_01"
+	
+	empire_flag = {
+		icon= {
+			category = "domination"
+			file = "domination_20.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"yellow"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler = {
+		name = "Katherine Rin"
+		gender = female
+		portrait = "human_female_05"
+		texture = 0
+		hair = 3
+		clothes = 5
+	}
+}
+alphacorp = {
+	name = "AlphaCorp"
+	spawn_enabled = always
+	ignore_portrait_duplication = yes
+	
+	name_list = "HUM3"
+	ship_prefix = "AC"
+	
+	species_name = "Human"
+	species_plural = "Humans"
+	species_adjective = "Human"
+	species_class = "HUM"
+	trait = "trait_quick_learners"
+	trait = "trait_nomadic"	
+	portrait = "human"
+	adjective = "Alphacorp"
+	
+	authority = "auth_oligarchic"
+	civics = { "civic_corporate_dominion" "civic_meritocracy" }
+	government = gov_megacorporation
+	
+	ethic = "ethic_fanatic_materialist"
+	ethic = "ethic_egalitarian"
+
+	flags = { alphacorp custom_start_screen }
+	
+	weapon = "tech_missiles_1"
+	ftl = warp
+	
+	planet_name = "Mountain View"
+	planet_class = "pc_warm_region"
+	initializer = "wtplanet8_initializer"
+	system_name = "Cascadia Republic"
+	
+	graphical_culture = "mammalian_01"
+	city_graphical_culture = "mammalian_01"
+	
+	empire_flag = {
+		icon= {
+			category = "pointy"
+			file = "flag_pointy_4.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"purple"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler = {
+		name = "Helen Varoufakis"
+		gender = female
+		portrait = "human_female_01"
+		texture = 0
+		hair = 2
+		clothes = 0
+	}
+}
+mars = {
+	name = "Mars Congress"
+	spawn_enabled = always
+	ignore_portrait_duplication = yes
+	
+	name_list = "HUM3"
+	ship_prefix = "MCS"
+	
+	species_name = "Human"
+	species_plural = "Humans"
+	species_adjective = "Human"
+	species_class = "HUM"
+	trait = "trait_quick_learners"
+	trait = "trait_nomadic"	
+	portrait = "human"
+	adjective = "Martian"
+	
+	authority = "auth_democratic"
+	civics = { "civic_beacon_of_liberty" "civic_mining_guilds" }
+	government = gov_direct_democracy
+	
+	ethic = "ethic_fanatic_egalitarian"
+	ethic = "ethic_materialist"
+
+	flags = { mars custom_start_screen }
+	
+	weapon = "tech_mass_drivers_1"
+	ftl = warp
+	
+	planet_name = "Kongressgrad"
+	planet_class = "pc_warm_region"
+	initializer = "wtplanet_initializer_initializer"
+	system_name = "Argyre Planitia"
+	
+	graphical_culture = "mammalian_01"
+	city_graphical_culture = "mammalian_01"
+	
+	empire_flag = {
+		icon= {
+			category = "spherical"
+			file = "flag_spherical_17.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"brown"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler = {
+		name = "Amara Crane"
+		gender = female
+		portrait = "human_female_03"
+		texture = 0
+		hair = 2
+		clothes = 0
+	}
+}

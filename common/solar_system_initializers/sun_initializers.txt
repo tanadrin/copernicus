@@ -1,0 +1,377 @@
+#Large planets and major minor planets, plus their moons
+earth_initializer = { 
+	name = "Earth" class = "sc_earth"
+	usage = custom_empire
+	planet = { name = "Earth" class = "pc_earth" orbit_distance = 1 orbit_angle = 270 size = 50 has_ring = no entity = "continental_planet_earth_entity" has_ring = no }
+	
+	change_orbit = 15
+	
+	planet = { name = "North America" home_planet = yes class = "pc_temperate_region" orbit_distance = 0 orbit_angle = 51 has_ring = no 
+		init_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = north_america
+				}
+				save_event_target_as = north_america
+			}
+			set_owner = event_target:north_america
+			set_controller = event_target:north_america
+			set_capital = yes
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_capital_2
+				add_resource = {
+					resource = food
+					amount = 1
+					replace = yes
+				}
+				add_resource = {
+					resource = minerals
+					amount = 1
+				}
+				create_pop = { species = owner_main_species }
+			}
+		}
+	}
+	planet = { name = "South America" home_planet = yes class = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no 
+		init_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = south_america
+				}
+				save_event_target_as = south_america
+			}
+			set_owner = event_target:south_america
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				add_resource = {
+					resource = food
+					amount = 1
+					replace = yes
+				}
+				add_resource = {
+					resource = minerals
+					amount = 1
+				}
+				create_pop = { species = owner_main_species }
+			}
+		}
+	}
+	planet = { name = "Europe" home_planet = yes class = "pc_temperate_region" orbit_distance = 0 orbit_angle = 51 has_ring = no 
+		init_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = europe
+				}
+				save_event_target_as = europe
+			}
+			set_owner = event_target:europe
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				add_resource = {
+					resource = food
+					amount = 1
+					replace = yes
+				}
+				add_resource = {
+					resource = minerals
+					amount = 1
+				}
+				create_pop = { species = owner_main_species }
+			}
+		}
+	}
+	planet = { name = "Africa" home_planet = yes class = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no 
+		init_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = africa
+				}
+				save_event_target_as = africa
+			}
+			set_owner = event_target:africa
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				add_resource = {
+					resource = food
+					amount = 1
+					replace = yes
+				}
+				add_resource = {
+					resource = minerals
+					amount = 1
+				}
+				create_pop = { species = owner_main_species }
+			}
+		}
+	}
+	planet = { name = "South Asia" home_planet = yes class = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no 
+		init_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = south_asia
+				}
+				save_event_target_as = south_asia
+			}
+			set_owner = event_target:south_asia
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				add_resource = {
+					resource = food
+					amount = 1
+					replace = yes
+				}
+				add_resource = {
+					resource = minerals
+					amount = 1
+				}
+				create_pop = { species = owner_main_species }
+			}
+		}
+	}
+	planet = { name = "East Asia" home_planet = yes class = "pc_temperate_region" orbit_distance = 0 orbit_angle = 51 has_ring = no  
+		init_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = pacific_compact
+				}
+				save_event_target_as = pacific_compact
+			}
+			set_owner = event_target:pacific_compact
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				add_resource = {
+					resource = food
+					amount = 1
+					replace = yes
+				}
+				add_resource = {
+					resource = minerals
+					amount = 1
+				}
+				create_pop = { species = owner_main_species }
+			}
+		}
+	}
+	planet = { name = "Antarctica" class = "pc_cold_region" orbit_distance = 0 orbit_angle = 51 has_ring = no }
+	
+	change_orbit = 200
+	
+	planet = { name = "The Moon" class = "pc_moon" entity = "cold_barren_planet_luna_entity" orbit_distance = 0 orbit_angle = 120 size = 20 has_ring = no change_orbit = 5
+		moon = { name = "Mare Tranquilitas" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no }
+		moon = { name = "Oceanus Procellarum" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no }
+		moon = { name = "Aitken Basin" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no }
+	}
+}
+sun_initializer = {
+	name = "The Sun" class = "sc_gc"
+	
+	planet = { name = "The Sun" class = "pc_gc_star" orbit_distance = 0 orbit_angle = 1 size = 100 has_ring = no }
+}
+mercury_initializer = {
+	name = "Mercury" class = "sc_rocky_airless"
+	
+	planet = { name = "Mercury" class = "pc_rocky_airless" orbit_distance = 1 orbit_angle = 1 size = 20 has_ring = no }
+	
+	change_orbit = 10
+	
+	planet = { name = "Caloris Basin" class = "pc_rocky_airless_region" orbit_distance = 0 orbit_angle = 180 has_ring = no }
+	planet = { name = "Suisei Planitia" class = "pc_rocky_airless_region" orbit_distance = 0 orbit_angle = 180 has_ring = no }
+}
+mars_initializer = { 
+	name = "Mars" class = "sc_mars"
+	
+	planet = { name = "Mars" class = "pc_mars" orbit_distance = 1 orbit_angle = 270 size = 30 has_ring = no entity = "barren_planet_mars_entity"}
+	
+	change_orbit = 7
+	
+	planet = { name = "Arabia Terra" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 72 has_ring = no }
+	planet = { name = "Utopia Planitia" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 72 has_ring = no }
+	planet = { name = "Argyre Planitia" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 72 has_ring = no home_planet = yes }
+	planet = { name = "Syrtis Major" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 72 has_ring = no }
+	planet = { name = "Hellas Basin" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 72 has_ring = no }
+	
+	change_orbit = 60
+	
+	planet = { name = "Phobos" class = "pc_asteroid_hab" orbit_distance = 0 orbit_angle = 40 size = 10 has_ring = no }
+	planet = { name = "Deimos" class = "pc_asteroid_hab" orbit_distance = 20 orbit_angle = 40 size = 10 has_ring = no }
+}
+ceres_initializer = {
+	name = "1Ceres" class = "sc_icy_airless"
+	
+	planet = { name = "1Ceres" class = "pc_icy_airless_hab" orbit_distance = 1 orbit_angle = 1 size = 15 has_ring = no }
+}
+vesta_initializer = {
+	name = "4 Vesta" class = "sc_asteroidc"
+	
+	planet = { name = "4 Vesta" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 15 has_ring = no }
+}
+jupiter_initializer = { 
+	name = "Jupiter" class = "sc_jupiter"
+	
+	planet = { name = "Jupiter" class = "pc_jupiter" orbit_distance = 1 orbit_angle = 270 size = 80 has_ring = no entity = "gas_giant_jupiter_entity" }
+	planet = { name = "Amalthea" class = "pc_asteroid_hab" orbit_distance = 30 orbit_angle = 51 has_ring = no }
+	planet = { name = "Io" class = "pc_rocky_airless" orbit_distance = 30 orbit_angle = 120 size = 20 has_ring = no
+		moon = { name = "Lei-Zi Fluctus" class = "pc_rocky_airless_region" orbit_distance = 5 has_ring = no }
+		moon = { name = "Tung-Yo Fluctus" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no }
+		moon = { name = "Tawhaki Vallis" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no }
+	}
+	planet = { name = "Europa" class = "pc_icy_airless" orbit_distance = 20 orbit_angle = 180 size = 20 has_ring = no
+		moon = { name = "Conamara Chaos" class = "pc_icy_airless_region" orbit_distance = 5 has_ring = no }
+		moon = { name = "Tara Regio" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no }
+	}
+	planet = { name = "Ganymede" class = "pc_rocky_airless" orbit_distance = 20 orbit_angle = 90 size = 20 has_ring = no
+		moon = { name = "Galileo Regio" class = "pc_rocky_airless_region" orbit_distance = 5 has_ring = no }
+		moon = { name = "Uruk Regio" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no }
+		moon = { name = "Xibalba Regio" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no }
+		moon = { name = "Heliopolis Facula" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no }
+	}
+	planet = { name = "Callisto" class = "pc_rocky_airless" orbit_distance = 20 orbit_angle = 180 size = 20 has_ring = no 
+		moon = { name = "Valhalla" class = "pc_rocky_airless_region" orbit_distance = 5 has_ring = no }
+		moon = { name = "Utgard" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no }
+	}
+	planet = { name = "Himalia" class = "pc_asteroid_hab" orbit_distance = 60 orbit_angle = 100 has_ring = no }
+	planet = { name = "Elara" class = "pc_asteroid_hab" orbit_distance = 10 orbit_angle = 20 has_ring = no }
+}
+saturn_initializer = { 
+	name = "Saturn" class = "sc_jovian"
+	
+	planet = { name = "Saturn" class = "pc_jovian" orbit_distance = 1 orbit_angle = 270 size = 80 entity = "gas_giant_05_entity" has_ring = yes }
+	planet = { name = "Janus" class = "pc_iceteroid_hab" orbit_distance = 40 orbit_angle =10 size = 8 has_ring = no }
+	planet = { name = "Mimas" class = "pc_icy_airless_hab" orbit_distance = 10 orbit_angle = 100 size = 10 has_ring = no }
+	planet = { name = "Enceladus" class = "pc_icy_airless_hab" orbit_distance = 10 orbit_angle = 130 size = 10 has_ring = no }
+	planet = { name = "Tethys" class = "pc_icy_airless" orbit_distance = 10 orbit_angle = 180 size = 20 has_ring = no
+		moon = { name = "Odysseus" class = "pc_icy_airless_region" orbit_distance = 5 has_ring = no }
+		moon = { name = "Ithaca Chasma" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no }
+	}
+	planet = { name = "Dione" class = "pc_icy_airless_hab" orbit_distance = 10 orbit_angle = 50 size = 10 has_ring = no }
+	planet = { name = "Rhea" class = "pc_icy_airless_hab" orbit_distance = 10 orbit_angle = 200 size = 10 has_ring = no }
+	planet = { name = "Titan" class = "pc_icy_atmosphere" orbit_distance = 20 orbit_angle = 120 size = 20 has_ring = no
+		moon = { name = "Dilmun" class = "pc_icy_atmosphere_region" orbit_distance = 5 has_ring = no }
+		moon = { name = "Xanadu" class = "pc_icy_atmosphere_region" orbit_distance = 0 has_ring = no }
+		moon = { name = "Senkyo" class = "pc_icy_atmosphere_region" orbit_distance = 0 has_ring = no }
+	}
+	planet = { name = "Hyperion" class = "pc_icy_airless_hab" orbit_distance = 20 orbit_angle = 200 size = 10 has_ring = no }
+	planet = { name = "Iapetus" class = "pc_icy_airless" orbit_distance = 20 orbit_angle = 180 size = 20 has_ring = no 
+		moon = { name = "Ronceveaux Terra" class = "pc_icy_atmosphere_region" orbit_distance = 5 has_ring = no }
+		moon = { name = "Cassini Regio" class = "pc_icy_atmosphere_region" orbit_distance = 0 has_ring = no }
+	}
+	planet = { name = "Phoebe" class = "pc_icy_airless_hab" orbit_distance = 50 orbit_angle = 100 has_ring = no }
+}
+uranus_initializer = { 
+	name = "Uranus" class = "sc_uranus"
+	
+	planet = { name = "Uranus" class = "pc_uranus" orbit_distance = 1 orbit_angle = 270 size = 50 has_ring = no entity = "uranus_entity"}
+	planet = { name = "Puck" class = "pc_iceteroid_hab" orbit_distance = 30 orbit_angle = 10 size = 8 has_ring = no }
+	planet = { name = "Miranda" class = "pc_icy_airless_hab" orbit_distance = 10 orbit_angle = 100 size = 10 has_ring = no }
+	planet = { name = "Ariel" class = "pc_icy_airless" orbit_distance = 10 orbit_angle = 150 size = 20 has_ring = no 
+		moon = { name = "Yangoon" class = "pc_icy_airless_region" orbit_distance = 5 has_ring = no }
+		moon = { name = "Laica" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no }
+	}
+	planet = { name = "Umbriel" class = "pc_icy_airless" orbit_distance = 10 orbit_angle = 180 size = 20 has_ring = no
+		moon = { name = "Setebos" class = "pc_icy_airless_region" orbit_distance = 5 has_ring = no }
+		moon = { name = "Skynd" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no }
+	}
+	planet = { name = "Titania" class = "pc_icy_airless" orbit_distance = 10 orbit_angle = 50 size = 20 has_ring = no 
+		moon = { name = "Jessica" class = "pc_icy_airless_region" orbit_distance = 5 has_ring = no }
+		moon = { name = "Messina Chasmata" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no }
+	}
+	planet = { name = "Oberon" class = "pc_icy_airless" orbit_distance = 10 orbit_angle = 200 size = 20 has_ring = no 
+		moon = { name = "Macbeth" class = "pc_icy_airless_region" orbit_distance = 5 has_ring = no }
+		moon = { name = "Mommur Chasmata" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no }
+	}
+}
+neptune_initializer = { 
+	name = "Neptune" class = "sc_neptunian"
+	
+	planet = { name = "Neptune" class = "pc_neptunian" orbit_distance = 1 orbit_angle = 270 size = 50 has_ring = no }
+	planet = { name = "Proteus" class = "pc_iceteroid_hab" orbit_distance = 20 orbit_angle = 120 size = 8 has_ring = no }
+	planet = { name = "Triton" class = "pc_icy_airless" orbit_distance = 20 orbit_angle = 90 size = 15 has_ring = no
+		moon = { name = "Abatos Planum" class = "pc_icy_airless_region" orbit_distance = 5 has_ring = no }
+		moon = { name = "Uhlanga Regio" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no }
+		moon = { name = "Bubenbi Regio" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no }
+		moon = { name = "Awib Dorsa" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no }
+	}
+	planet = { name = "Nereid" class = "pc_iceteroid_hab" orbit_distance = 20 orbit_angle = 120 size = 8 has_ring = no }
+}
+pluto_initializer = { 
+	name = "134340 Pluto" class = "sc_icy_airless"
+	
+	planet = { name = "Pluto" class = "pc_icy_airless_hab" orbit_distance = 20 orbit_angle = 0 size = 20 has_ring = no }
+	planet = { name = "Charon" class = "pc_icy_airless_hab" orbit_distance = 40 orbit_angle = 180 size = 10 has_ring = no }
+}
+eris_initializer = { 
+	name = "136199 Eris" class = "sc_iceteroid"
+	
+	planet = { name = "136199 Eris" class = "pc_iceteroid_hab" orbit_distance = 1 orbit_angle = 90 size = 10 has_ring = no }
+	planet = { name = "Dysnomia" class = "pc_iceteroid_hab" orbit_distance = 40 orbit_angle = 270 size = 8 has_ring = no }
+}
+
+#Additional main-belt objects
+
+pallas_initializer = {
+	name = "2 Pallas" class = "sc_asteroidc"
+	planet = { name = "2 Pallas" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no }
+}
+hygiea_initializer = {
+	name = "10 Hygiea" class = "sc_asteroidc"
+	planet = { name = "10 Hygiea" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no }
+}
+interamnia_initializer = {
+	name = "704 Interamnia" class = "sc_asteroidc"
+	planet = { name = "704 Interamnia" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no }
+}
+europa_initializer = {
+	name = "52 Europa" class = "sc_asteroidc"
+	planet = { name = "52 Europa" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no }
+}
+davida_initializer = {
+	name = "511 Davida" class = "sc_asteroidc"
+	planet = { name = "511 Davida" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no home_planet = yes }
+}
+sylvia_initializer = {
+	name = "87 Sylvia" class = "sc_asteroidc"
+	planet = { name = "87 Sylvia" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 15 has_ring = no }
+	planet = { name = "Remus" class = "pc_asteroid_hab" orbit_distance = 20 orbit_angle = 100 size = 10 has_ring = no }
+	planet = { name = "Romulus" class = "pc_asteroid_hab" orbit_distance = 20 orbit_angle = 100 size = 10 has_ring = no }
+}
+cybele_initializer = {
+	name = "65 Cybele" class = "sc_asteroidc"
+	planet = { name = "65 Cybele" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no home_planet = yes }
+}
+eunomia_initializer = {
+	name = "15 Eunomia" class = "sc_asteroidc"
+	planet = { name = "15 Eunomia" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no home_planet = yes }
+}
+juno_initializer = {
+	name = "3 Juno" class = "sc_asteroidc"
+	planet = { name = "3 Juno" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no home_planet = yes }
+}
+euphrosyne_initializer = {
+	name = "31 Euphrosyne" class = "sc_asteroidc"
+	planet = { name = "31 Euphrosyne" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no home_planet = yes }
+}
+
+#Additional Kuiper Belt objects
+
+makemake_initializer = {
+	name = "136472 Makemake" class = "sc_iceteroid"
+	planet = { name = "136472 Makemake" class = "pc_iceteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no }
+	planet = { name = "MK 2" class = "pc_iceteroid" orbit_distance = 20 orbit_angle = 70 size = 4 has_ring = no }
+}
+haumea_initializer = {
+	name = "136108 Haumea" class = "sc_iceteroid"
+	planet = { name = "136108 Haumea" class = "pc_iceteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no }
+	planet = { name = "Hi'iaka" class = "pc_iceteroid" orbit_distance = 30 orbit_angle = 100 size = 4 has_ring = no }
+	planet = { name = "Namaka" class = "pc_iceteroid" orbit_distance = 30 orbit_angle = 120 size = 4 has_ring = no }
+}
+orcus_initializer = {
+	name = "90482 Orcus" class = "sc_iceteroid"
+	planet = { name = "90482 Orcus" class = "pc_iceteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 12 has_ring = no }
+	planet = { name = "Vanth" class = "pc_iceteroid_hab" orbit_distance = 20 orbit_angle = 30 size = 6 has_ring = no }
+}
+quaoar_initializer = {
+	name = "50000 Quaoar" class = "sc_iceteroid"
+	planet = { name = "50000 Quaoar" class = "pc_iceteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 12 has_ring = no }
+	planet = { name = "Weywot" class = "pc_iceteroid" orbit_distance = 20 orbit_angle = 30 size = 4 has_ring = no }
+}

@@ -1,0 +1,68 @@
+﻿namespace = copernicus_start
+
+#Set starting communications and flags
+event = {
+	id = copernicus_start.1
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_country = { country_event = { id = copernicus_start.10 days = 1 } }
+		set_global_flag = copernicus
+	}
+}
+
+country_event = {
+	id = copernicus_start.10
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		#Get countries
+		random_country = {
+			limit = { has_country_flag = europe }
+			save_event_target_as = europe
+		}
+		random_country = {
+			limit = { has_country_flag = north_america }
+			save_event_target_as = north_america
+		}
+		random_country = {
+			limit = { has_country_flag = south_america }
+			save_event_target_as = south_america
+		}
+		random_country = {
+			limit = { has_country_flag = africa }
+			save_event_target_as = africa
+		}
+		random_country = {
+			limit = { has_country_flag = south_asia }
+			save_event_target_as = south_asia
+		}
+		random_country = {
+			limit = { has_country_flag = pacific_compact }
+			save_event_target_as = pacific_compact
+		}
+		random_country = {
+			limit = { has_country_flag = orbitech }
+			save_event_target_as = orbitech
+		}
+		random_country = {
+			limit = { has_country_flag = mars }
+			save_event_target_as = mars
+		}
+		random_country = {
+			limit = { has_country_flag = alphacorp }
+			save_event_target_as = alphacorp
+		}
+		every_country = {
+			establish_communications_no_message = event_target:europe
+			establish_communications_no_message = event_target:north_america
+			establish_communications_no_message = event_target:south_america
+			establish_communications_no_message = event_target:africa
+			establish_communications_no_message = event_target:south_asia
+			establish_communications_no_message = event_target:pacific_compact
+			establish_communications_no_message = event_target:alphacorp
+			establish_communications_no_message = event_target:orbitech
+			establish_communications_no_message = event_target:mars
+		}
+	}
+}

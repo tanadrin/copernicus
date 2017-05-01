@@ -1,0 +1,4 @@
+	NGameplay = {
+		START_YEAR = 2075
+		CUSTOM_EMPIRE_SPAWN_CHANCE 			= 1000		
+	}		

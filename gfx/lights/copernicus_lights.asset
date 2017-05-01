@@ -1,0 +1,168 @@
+light = {
+	name = "earth_light"
+	
+	color = { 
+		r = { 1.0 }
+		g = { 0.9 }
+		b = { 0.7 }
+	}
+	
+	intensity = 3.5, fade
+	radius = 10000
+	falloff = 0
+	
+	position = { x = 500 y = -4 z = 0 }
+
+	animation = {
+		name = "fade"
+		start = 0
+		duration = 4
+		repeat = yes
+		op = "MUL" # "MUL"/"ADD"/"ABS"
+		minValue = 0.8
+		maxValue = 1
+		curve = { 
+			0	0.8 
+			0.4	1
+			1	0.8
+		}
+	}	
+}
+
+light = {
+	name = "rocky_airless_light"
+	
+	color = { 
+		r = { 0.9 }
+		g = { 0.9 }
+		b = { 0.9 }
+	}
+	intensity = 3.5
+	radius = 10000
+	falloff = 0
+	
+	position = { x = 500 y = -4 z = 0 }
+}
+
+light = {
+	name = "icy_airless_light"
+	
+	color = { 
+		r = { 0.9 }
+		g = { 0.9 }
+		b = { 0.9 }
+	}
+	intensity = 3.5
+	radius = 10000
+	falloff = 0
+	
+	position = { x = 500 y = -4 z = 0 }
+}
+
+light = {
+	name = "mars_light"
+
+	color = { 
+		r = { 0.9 }
+		g = { 0.9 }
+		b = { 0.9 }
+	}
+		
+	intensity = 2.5
+	#intensity = 4.5
+	radius = 10000
+	falloff = 0
+	
+	position = { x = 150 y = 2 z = 500 }
+	
+}
+
+light = {
+	name = "asteroidc_light"
+	
+	color = { 
+		r = { 0.9 }
+		g = { 0.9 }
+		b = { 0.9 }
+	}
+	intensity = 3.5
+	radius = 10000
+	falloff = 0
+	
+	position = { x = 0 y = -4 z = 500 }
+}
+
+light = {
+	name = "iceteroid_light"
+	
+	color = { 
+		r = { 0.9 }
+		g = { 0.9 }
+		b = { 0.9 }
+	}
+	intensity = 3.5
+	radius = 10000
+	falloff = 0
+	
+	position = { x = 0 y = -4 z = 500 }
+}
+
+light = {
+	name = "jupiter_light"
+	
+	color = { 
+		r = { 0.9 }
+		g = { 0.9 }
+		b = { 0.9 }
+	}
+	intensity = 3.5
+	radius = 10000
+	falloff = 0
+	
+	position = { x = -500 y = -4 z = 0 }
+}
+
+light = {
+	name = "jovian_light"
+	
+	color = { 
+		r = { 0.9 }
+		g = { 0.9 }
+		b = { 0.9 }
+	}
+	intensity = 3.5
+	radius = 10000
+	falloff = 0
+	
+	position = { x = 0 y = -4 z = 500 }
+}
+
+light = {
+	name = "uranus_light"
+	
+	color = { 
+		r = { 0.7 }
+		g = { 0.8 }
+		b = { 0.9 }
+	}
+	intensity = 3.5
+	radius = 10000
+	falloff = 0
+	
+	position = { x = -500 y = -4 z = 500 }
+}
+
+light = {
+	name = "neptunian_light"
+	
+	color = { 
+		r = { 0.7 }
+		g = { 0.7 }
+		b = { 0.9 }
+	}
+	intensity = 3.5
+	radius = 10000
+	falloff = 0
+	
+	position = { x = 0 y = -4 z = 500 }
+}

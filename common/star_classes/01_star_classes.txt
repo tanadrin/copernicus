@@ -1,0 +1,109 @@
+###Star initializers for stars
+
+#G stars
+sc_gc = {
+	class 			= gc_star
+	icon_scale		= 1.3
+	planet			= pc_gc_star
+	num_planets 	= { min = 0 max = 20 }
+}
+#K stars
+sc_kc = {
+	class 			= kc_star
+	icon_scale		= 1.3
+	planet			= pc_kc_star
+	num_planets 	= { min = 0 max = 20 }
+}
+#M stars
+sc_mc = {
+	class 			= mc_star
+	icon_scale		= 1.3
+	planet			= pc_mc_star
+	num_planets 	= { min = 0 max = 20 }
+}
+#L, T, Y dwarfs
+sc_lc = {
+	class 			= lc_star
+	icon_scale		= 1.3
+	planet			= pc_lc_star
+	num_planets 	= { min = 0 max = 20 }
+}
+
+###Star initializers for planets
+#Earth
+sc_earth = {
+	class 			= earth_star
+	icon_scale		= 0.8
+	planet			= pc_earth
+	num_planets 	= { min = 0 max = 20 }
+}
+#Mars
+sc_mars = {
+	class 			= mars_star
+	icon_scale		= 0.8
+	planet			= pc_mars
+	num_planets 	= { min = 0 max = 20 }
+}
+#Jupiter
+sc_jupiter = {
+	class 			= jupiter_star
+	icon_scale		= 1.0
+	planet			= pc_jupiter
+	num_planets 	= { min = 0 max = 20 }
+}
+#Rocky, airless
+sc_rocky_airless = {
+	class 			= rocky_airless_star
+	icon_scale		= 0.8
+	planet			= pc_rocky_airless
+	num_planets 	= { min = 0 max = 20 }
+}
+#Rocky, atmosphere
+sc_rocky_atmosphere = {
+	class 			= rocky_atmosphere_star
+	icon_scale		= 0.8
+	planet			= pc_rocky_atmosphere
+	num_planets 	= { min = 0 max = 20 }
+}
+#Icy, large, airless
+sc_icy_airless = {
+	class 			= icy_airless_star
+	icon_scale		= 0.8
+	planet			= pc_icy_airless
+	num_planets 	= { min = 0 max = 20 }
+}
+#Rocky asteroid
+sc_asteroidc = {
+	class 			= asteroidc_star
+	icon_scale		= 0.2
+	planet			= pc_asteroidc
+	num_planets 	= { min = 0 max = 20 }
+}
+#Icy asteroid
+sc_iceteroid = {
+	class 			= iceteroid_star
+	icon_scale		= 0.2
+	planet			= pc_iceteroid
+	num_planets 	= { min = 0 max = 20 }
+}
+#Gas giant
+sc_jovian = {
+	class 			= jovian_star
+	icon_scale		= 1.0
+	planet			= pc_jovian
+	num_planets 	= { min = 0 max = 20 }
+}
+#Uranus
+sc_uranus = {
+	class 			= uranus_star
+	icon_scale		= 1.0
+	planet			= pc_uranus
+	num_planets 	= { min = 0 max = 20 }
+}
+#Ice giant
+sc_neptunian = {
+	class 			= neptunian_star
+	icon_scale		= 1.0
+	planet			= pc_neptunian
+	num_planets 	= { min = 0 max = 20 }
+}
