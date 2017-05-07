@@ -71,13 +71,13 @@ static_galaxy_scenario = {
 	system = { id = "44" name = "Proxima Centauri k" position = { x = 78 y = 188} initializer = "proximak_initializer" }
 	
 	#Special initializers for starting systems
-	system = { id = "45" name = "Earth" position = { x = 400 y = -400 } initializer = "wplanet1_initializer" spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = europe } } }
-	system = { id = "46" name = "Berth" position = { x = 400 y = -400 } initializer = "wplanet2_initializer" spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = africa } } }
-	system = { id = "47" name = "Merth" position = { x = 400 y = -400 } initializer = "wplanet3_initializer" spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = pacific_compact } } }
-	system = { id = "48" name = "Serth" position = { x = 400 y = -400 } initializer = "wplanet4_initializer" spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = south_america } } }
-	system = { id = "49" name = "Qwerth" position = { x = 400 y = -400 } initializer = "wplanet5_initializer" spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = south_asia } } }
-	system = { id = "50" name = "Plerf" position = { x = 400 y = -400 } initializer = "wplanet6_initializer" spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = orbitech } } }
-	system = { id = "51" name = "Mzerf" position = { x = 400 y = -400 } initializer = "wplanet7_initializer" spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = alphacorp } } }
-	system = { id = "52" name = "Mars" position = { x = 400 y = -400 } initializer = "wplanet8_initializer"  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = mars } } }
-	system = { id = "53" name = "Bwaggle" position = { x = 400 y = -400 } initializer = "wplanet9_initializer" spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = north_america } } }
+	system = { id = "45" name = " " position = { x = 400 y = -400 } initializer = "wplanet1_initializer" spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = europe } } }
+	system = { id = "46" name = "  " position = { x = 400 y = -400 } initializer = "wplanet2_initializer" spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = africa } } }
+	system = { id = "47" name = "   " position = { x = 400 y = -400 } initializer = "wplanet3_initializer" spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = pacific_compact } } }
+	system = { id = "48" name = "    " position = { x = 400 y = -400 } initializer = "wplanet4_initializer" spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = south_america } } }
+	system = { id = "49" name = "     " position = { x = 400 y = -400 } initializer = "wplanet5_initializer" spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = south_asia } } }
+	system = { id = "50" name = "      " position = { x = 400 y = -400 } initializer = "wplanet6_initializer" spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = orbitech } } }
+	system = { id = "51" name = "       " position = { x = 400 y = -400 } initializer = "wplanet7_initializer" spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = alphacorp } } }
+	system = { id = "52" name = "        " position = { x = 400 y = -400 } initializer = "wplanet8_initializer"  spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = mars } } }
+	system = { id = "53" name = "         " position = { x = 400 y = -400 } initializer = "wplanet9_initializer" spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = north_america } } }
 }

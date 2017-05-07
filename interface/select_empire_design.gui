@@ -326,7 +326,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "user_empire_design_entry"
-		size = { width = 200 height = 65 }
+		size = { width = 200 height = 0 }
 
 		background = {
 			name = "bg"

@@ -34,6 +34,7 @@ EU = {
 	
 	graphical_culture = "mammalian_01"
 	city_graphical_culture = "mammalian_01"
+	room = "europe_room"
 	
 	empire_flag = {
 		icon= {
@@ -98,6 +99,7 @@ AU = {
 	
 	graphical_culture = "mammalian_01"
 	city_graphical_culture = "mammalian_01"
+	room = "africa_room"
 	
 	empire_flag = {
 		icon= {
@@ -161,6 +163,7 @@ NAFTA = {
 	
 	graphical_culture = "mammalian_01"
 	city_graphical_culture = "mammalian_01"
+	room = "nafta_room"
 	
 	empire_flag = {
 		icon= {
@@ -225,6 +228,7 @@ MERCOSUR = {
 	
 	graphical_culture = "mammalian_01"
 	city_graphical_culture = "mammalian_01"
+	room = "mercosur_room"
 	
 	empire_flag = {
 		icon= {
@@ -288,6 +292,7 @@ SAARC = {
 	
 	graphical_culture = "mammalian_01"
 	city_graphical_culture = "mammalian_01"
+	room = "saarc_room"
 	
 	empire_flag = {
 		icon= {
@@ -351,6 +356,7 @@ PC = {
 	
 	graphical_culture = "mammalian_01"
 	city_graphical_culture = "mammalian_01"
+	room = "pacific_compact_room"
 	
 	empire_flag = {
 		icon= {
@@ -414,6 +420,7 @@ orbitech = {
 	
 	graphical_culture = "mammalian_01"
 	city_graphical_culture = "mammalian_01"
+	room = "orbitech_room"
 	
 	empire_flag = {
 		icon= {
@@ -477,6 +484,7 @@ alphacorp = {
 	
 	graphical_culture = "mammalian_01"
 	city_graphical_culture = "mammalian_01"
+	room = "alphacorp_room"
 	
 	empire_flag = {
 		icon= {
@@ -540,6 +548,7 @@ mars = {
 	
 	graphical_culture = "mammalian_01"
 	city_graphical_culture = "mammalian_01"
+	room = "mars_room"
 	
 	empire_flag = {
 		icon= {

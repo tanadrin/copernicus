@@ -136,7 +136,7 @@ pc_earth = {
 	extra_planet_count = 0
 	
 	chance_of_ring = 0
-	planet_size = { min = 20 max = 35 }
+	planet_size = { min = 9 max = 35 }
 	
 	colonizable = no
 }
@@ -163,8 +163,8 @@ pc_moon = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = 12 max = 30 }
-	moon_size = { min = 6 max = 10 }
+	planet_size = { min = 1 max = 30 }
+	moon_size = { min = 1 max = 10 }
 	
 	colonizable = no
 }
@@ -191,8 +191,8 @@ pc_mars = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = 12 max = 30 }
-	moon_size = { min = 6 max = 10 }
+	planet_size = { min = 1 max = 30 }
+	moon_size = { min = 1 max = 10 }
 	
 	colonizable = no
 }
@@ -219,8 +219,8 @@ pc_jupiter = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = 12 max = 30 }
-	moon_size = { min = 6 max = 10 }
+	planet_size = { min = 1 max = 30 }
+	moon_size = { min = 1 max = 10 }
 	
 	colonizable = no
 }
@@ -268,8 +268,8 @@ pc_rocky_airless_hab = {
 	max_distance_from_sun = 0
 	spawn_odds = 0
 	
-	planet_size = { min = 9 max = 25 }
-	moon_size = { min = 5 max = 15 }
+	planet_size = { min = 16 max = 16 }
+	moon_size = { min = 16 max = 16 }
 	
 	extra_orbit_size = 0
 	extra_planet_count = 0
@@ -296,8 +296,8 @@ pc_rocky_atmosphere_hab = {
 	max_distance_from_sun = 0
 	spawn_odds = 0
 	
-	planet_size = { min = 9 max = 25 }
-	moon_size = { min = 5 max = 15 }
+	planet_size = { min = 16 max = 16 }
+	moon_size = { min = 16 max = 16 }
 	
 	extra_orbit_size = 0
 	extra_planet_count = 0
@@ -324,8 +324,8 @@ pc_icy_airless_hab = {
 	max_distance_from_sun = 0
 	spawn_odds = 0
 	
-	planet_size = { min = 9 max = 25 }
-	moon_size = { min = 5 max = 15 }
+	planet_size = { min = 16 max = 16 }
+	moon_size = { min = 16 max = 16 }
 	
 	extra_orbit_size = 0
 	extra_planet_count = 0
@@ -352,8 +352,8 @@ pc_icy_atmosphere_hab = {
 	max_distance_from_sun = 0
 	spawn_odds = 0
 	
-	planet_size = { min = 9 max = 25 }
-	moon_size = { min = 5 max = 15 }
+	planet_size = { min = 16 max = 16 }
+	moon_size = { min = 16 max = 16 }
 	
 	extra_orbit_size = 0
 	extra_planet_count = 0
@@ -374,8 +374,8 @@ pc_asteroid_hab = {
 	
 	enable_tilt = no
 	
-	planet_size = { min = 5 max = 15 }
-	moon_size = { min = 5 max = 15 }
+	planet_size = { min = 12 max = 12 }
+	moon_size = { min = 12 max = 12 }
 	
 	extra_orbit_size = 0
 	extra_planet_count = 0
@@ -394,8 +394,8 @@ pc_iceteroid_hab = {
 	max_distance_from_sun = 0
 	spawn_odds = 0
 	
-	planet_size = { min = 5 max = 15 }
-	moon_size = { min = 5 max = 15 }
+	planet_size = { min = 12 max = 12 }
+	moon_size = { min = 12 max = 12 }
 	
 	enable_tilt = no
 	
@@ -497,8 +497,8 @@ pc_rocky_airless = {
 	
 	enable_tilt = no
 	
-	planet_size = { min = 5 max = 15 }
-	moon_size = { min = 5 max = 15 }
+	planet_size = { min = 1 max = 15 }
+	moon_size = { min = 1 max = 15 }
 	
 	min_distance_from_sun = 0
 	max_distance_from_sun = 0
@@ -525,8 +525,8 @@ pc_rocky_atmosphere = {
 	
 	enable_tilt = no
 	
-	planet_size = { min = 5 max = 15 }
-	moon_size = { min = 5 max = 15 }
+	planet_size = { min = 1 max = 15 }
+	moon_size = { min = 1 max = 15 }
 	
 	min_distance_from_sun = 0
 	max_distance_from_sun = 0
@@ -553,8 +553,8 @@ pc_icy_airless = {
 	
 	enable_tilt = no
 	
-	planet_size = { min = 5 max = 15 }
-	moon_size = { min = 5 max = 15 }
+	planet_size = { min = 1 max = 15 }
+	moon_size = { min = 1 max = 15 }
 
 	min_distance_from_sun = 0
 	max_distance_from_sun = 0
@@ -581,8 +581,8 @@ pc_icy_atmosphere = {
 	
 	enable_tilt = no
 	
-	planet_size = { min = 5 max = 15 }
-	moon_size = { min = 5 max = 15 }
+	planet_size = { min = 1 max = 15 }
+	moon_size = { min = 1 max = 15 }
 
 	min_distance_from_sun = 0
 	max_distance_from_sun = 0
@@ -605,8 +605,8 @@ pc_asteroidc = {
 	max_distance_from_sun = 0
 	spawn_odds = 0
 	
-	planet_size = { min = 5 max = 15 }
-	moon_size = { min = 5 max = 15 }
+	planet_size = { min = 1 max = 15 }
+	moon_size = { min = 1 max = 15 }
 	
 	enable_tilt = no
 	
@@ -666,8 +666,8 @@ pc_temperate_region = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = 12 max = 25 }
-	moon_size = { min = 12 max = 25 }
+	planet_size = { min = 23 max = 23 }
+	moon_size = { min = 23 max = 23 }
 	
 	colonizable = yes
 	orbit_lines = no
@@ -697,8 +697,8 @@ pc_warm_region = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = 12 max = 25 }
-	moon_size = { min = 12 max = 25 }
+	planet_size = { min = 23 max = 23 }
+	moon_size = { min = 23 max = 23 }
 	
 	colonizable = yes
 	orbit_lines = no
@@ -728,8 +728,8 @@ pc_cold_region = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = 12 max = 25 }
-	moon_size = { min = 12 max = 25 }
+	planet_size = { min = 17 max = 17 }
+	moon_size = { min = 17 max = 17 }
 	
 	colonizable = yes
 	orbit_lines = no
@@ -759,8 +759,8 @@ pc_rocky_airless_region = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = 12 max = 25 }
-	moon_size = { min = 12 max = 25 }
+	planet_size = { min = 14 max = 14 }
+	moon_size = { min = 14 max = 14 }
 	
 	colonizable = yes
 	orbit_lines = no
@@ -790,8 +790,8 @@ pc_icy_airless_region = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = 12 max = 25 }
-	moon_size = { min = 12 max = 25 }
+	planet_size = { min = 14 max = 14 }
+	moon_size = { min = 14 max = 14 }
 	
 	colonizable = yes
 	orbit_lines = no
@@ -821,8 +821,8 @@ pc_rocky_atmosphere_region = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = 12 max = 25 }
-	moon_size = { min = 12 max = 25 }
+	planet_size = { min = 15 max = 15 }
+	moon_size = { min = 15 max = 15 }
 	
 	colonizable = yes
 	orbit_lines = no
@@ -852,8 +852,8 @@ pc_icy_atmosphere_region = {
 	
 	chance_of_ring = 0
 	
-	planet_size = { min = 12 max = 25 }
-	moon_size = { min = 12 max = 25 }
+	planet_size = { min = 15 max = 15 }
+	moon_size = { min = 15 max = 15 }
 	
 	colonizable = yes
 	orbit_lines = no

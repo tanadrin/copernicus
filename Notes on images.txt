@@ -1,0 +1,8 @@
+All images in this mod come from one of three sources: NASA (in which case they're public domain), Stellaris itself, or Wikimedia commons. In the case of Wikimedia images, the sources are listed here.
+
+https://commons.wikimedia.org/wiki/File:Park_Hyatt,_Shanghai_(3198569878).jpg
+https://upload.wikimedia.org/wikipedia/commons/f/f5/South_America_night.jpg
+https://upload.wikimedia.org/wikipedia/commons/3/30/Northern_Quarter_of_Brussels_panorama.jpg
+https://upload.wikimedia.org/wikipedia/commons/0/01/%27Minar-e-Pakistan%27.jpg
+https://upload.wikimedia.org/wikipedia/commons/3/30/Pluto-map-sept-16-2015.jpg
+http://www.solarsystemscope.com/nexus/textures/planet_textures/

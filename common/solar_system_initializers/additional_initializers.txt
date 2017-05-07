@@ -1,37 +1,37 @@
 #Used for setting up the initial starting conditions of the galaxy.
 wplanet1_initializer = {
 	class = "sc_asteroidc"
-	planet = { class = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no home_planet = yes }
+	planet = { name = " " class = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no home_planet = yes }
 }
 wplanet2_initializer = {
 	class = "sc_asteroidc"
-	planet = { class = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no home_planet = yes }
+	planet = { name = " "  = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no home_planet = yes }
 }
 wplanet3_initializer = {
 	class = "sc_asteroidc"
-	planet = { class = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no home_planet = yes }
+	planet = { name = " " class = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no home_planet = yes }
 }
 wplanet4_initializer = {
 	class = "sc_asteroidc"
-	planet = { class = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no home_planet = yes }
+	planet = { name = " " class = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no home_planet = yes }
 }
 wplanet5_initializer = {
 	class = "sc_asteroidc"
-	planet = { class = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no home_planet = yes }
+	planet = { name = " " class = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no home_planet = yes }
 }
 wplanet6_initializer = {
 	class = "sc_asteroidc"
-	planet = { class = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no home_planet = yes }
+	planet = { name = " " class = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no home_planet = yes }
 }
 wplanet7_initializer = {
 	class = "sc_asteroidc"
-	planet = { class = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no home_planet = yes }
+	planet = { name = " " class = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no home_planet = yes }
 }
 wplanet8_initializer = {
 	class = "sc_asteroidc"
-	planet = { class = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no home_planet = yes }
+	planet = { name = " " class = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no home_planet = yes }
 }
 wplanet9_initializer = {
 	class = "sc_asteroidc"
-	planet = { class = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no home_planet = yes }
+	planet = { name = " " class = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no home_planet = yes }
 }

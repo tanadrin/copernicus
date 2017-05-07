@@ -55,15 +55,183 @@ event = {
 			establish_communications_no_message = event_target:mars
 		}
 		every_country = {
-			limit = { exists = capital_scope }
+			every_owned_fleet = {
+				leader = { unassign_leader = this }
+				destroy_fleet = yes
+				destroy_fleet = this
+			}
+		}
+		every_country = {
+			limit = { 
+				exists = capital_scope 
+				OR = {
+					has_country_flag = europe
+					has_country_flag = north_america
+					has_country_flag = south_america
+					has_country_flag = africa
+					has_country_flag = south_asia
+					has_country_flag = pacific_compact
+					has_country_flag = mars
+					has_country_flag = alphacorp
+					has_country_flag = orbitech
+				}
+			}
 			capital_scope = {
 				solar_system = {
 					every_system_planet = {
+						owner = { add_influence = -1000 }
 						every_tile = { kill_pop = yes }
+						set_owner = none
 					}
-					any_ship_in_system = { reduce_hp = 10000 }
 				}
 			}
+		}
+		
+		every_planet = {
+			limit = { is_planet_class = pc_asteroid_hab }
+			every_tile = { set_blocker = tb_asteroid_interior }
+			random_tile = { remove_blocker = yes }
+		}
+		every_planet = {
+			limit = { is_planet_class = pc_iceteroid_hab }
+			every_tile = { set_blocker = tb_asteroid_interior2 }
+			random_tile = { remove_blocker = yes }
+		}
+		
+		every_planet = {
+			limit = { has_planet_flag = start_surveyed }
+			surveyed = {
+				set_surveyed = yes
+				surveyor = event_target:europe
+			}
+			surveyed = {
+				set_surveyed = yes
+				surveyor = event_target:north_america
+			}
+			surveyed = {
+				set_surveyed = yes
+				surveyor = event_target:south_america
+			}
+			surveyed = {
+				set_surveyed = yes
+				surveyor = event_target:africa
+			}
+			surveyed = {
+				set_surveyed = yes
+				surveyor = event_target:south_asia
+			}
+			surveyed = {
+				set_surveyed = yes
+				surveyor = event_target:pacific_compact
+			}
+			surveyed = {
+				set_surveyed = yes
+				surveyor = event_target:alphacorp
+			}
+			surveyed = {
+				set_surveyed = yes
+				surveyor = event_target:orbitech
+			}
+			surveyed = {
+				set_surveyed = yes
+				surveyor = event_target:mars
+			}
+		}
+		
+		every_planet = {
+			limit = { has_planet_flag = UN }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_holdout_states }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_holdout_states }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_holdout_states }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_holdout_states }
+		}
+		
+		every_planet = {
+			limit = { OR = { has_planet_flag = north_america_continent has_planet_flag = east_asia_continent } } 
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_superfund_site }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_superfund_site }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_superfund_site }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_superfund_site }
+			create_spaceport = {
+				owner = planet.owner
+				initial_module = "missile_weapon"
+			}
+		}
+		
+		every_planet = {
+			limit = { OR = { has_planet_flag = africa_continent has_planet_flag = south_america_continent } } 
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_terran_jungle }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_terran_jungle }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_terran_jungle }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_terran_jungle }
+			create_spaceport = {
+				owner = planet.owner
+				initial_module = "missile_weapon"
+			}
+		}
+		
+		every_planet = {
+			limit = { OR = { has_planet_flag = europe_continent has_planet_flag = south_asia_continent } } 
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_wartorn_terrain }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_wartorn_terrain }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_wartorn_terrain }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_wartorn_terrain }
+			create_spaceport = {
+				owner = planet.owner
+				initial_module = "missile_weapon"
+			}
+		}
+		
+		every_planet = {
+			limit = { has_planet_flag = antarctica_continent } 
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_ice_sheet }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_ice_sheet }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_ice_sheet }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_ice_sheet }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_ice_sheet }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_ice_sheet }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_ice_sheet }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_ice_sheet }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_ice_sheet }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_ice_sheet }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_ice_sheet }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_ice_sheet }
+		}
+		
+		every_planet = {
+			limit = { OR = { is_planet_class = pc_rocky_atmosphere_region is_planet_class = pc_rocky_airless_region is_planet_class = pc_icy_atmosphere_region is_planet_class = pc_icy_airless_region } }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_terra_incognita }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_terra_incognita }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_terra_incognita }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_unstable_surface }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_unstable_surface }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_unstable_surface }
+		}
+		
+		every_planet = {
+			limit = { OR = { is_planet_class = pc_icy_airless_hab is_planet_class = pc_icy_atmosphere_hab is_planet_class = pc_rocky_airless_hab is_planet_class = pc_rocky_atmosphere_hab } }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_terra_incognita }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_terra_incognita }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_terra_incognita }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_unstable_surface }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_unstable_surface }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_unstable_surface }
+		}
+		
+		every_planet = {
+			limit = { NOT = { has_planet_flag = antarctica_continent } is_planet_class = pc_cold_region }  
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_ice_sheet }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_ice_sheet }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_ice_sheet }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_terra_incognita }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_terra_incognita }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_terra_incognita }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_terra_incognita }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_terra_incognita }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_unstable_surface }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_unstable_surface }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_unstable_surface }
+			random_tile = { limit = { has_building = no has_blocker = no } set_blocker = tb_unstable_surface }
 		}
 	}
 }

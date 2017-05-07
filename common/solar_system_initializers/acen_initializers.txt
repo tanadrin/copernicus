@@ -10,20 +10,77 @@ acenaf_initializer = {
 	name = "Alpha Centauri Af" class = "sc_rocky_airless"
 	
 	planet = { name = "Alpha Centauri Af" class = "pc_rocky_airless" orbit_distance = 1 orbit_angle = 1 size = 20 has_ring = no }
-	planet = { name = "Dis" class = "pc_rocky_airless_region" orbit_distance = 8 orbit_angle = 180 has_ring = no }
-	planet = { name = "Malebolge Terra" class = "pc_rocky_airless_region" orbit_distance = 0 orbit_angle = 120 has_ring = no }
+	planet = { name = "Dis" class = "pc_rocky_airless_region" orbit_distance = 8 orbit_angle = 180 has_ring = no planet_size = 13
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+				add_modifier = {
+					modifier = "high_temperatures"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Malebolge Terra" class = "pc_rocky_airless_region" orbit_distance = 0 orbit_angle = 120 has_ring = no  planet_size = 15
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+				add_modifier = {
+					modifier = "high_temperatures"
+					days = -1
+				}
+			}
+		}
 
 }
 acenae_initializer = {
 	name = "Alpha Centauri Ae" class = "sc_rocky_airless"
 	
 	planet = { name = "Alpha Centauri Ae" class = "pc_rocky_airless" orbit_distance = 1 orbit_angle = 1 size = 30 has_ring = no }
-	planet = { name = "Herodotus Planitia" class = "pc_rocky_airless_region" orbit_distance = 10 orbit_angle = 120 has_ring = no }
-	planet = { name = "Xenophon Terra" class = "pc_rocky_airless_region" orbit_distance = 0 orbit_angle = 120 has_ring = no }
-	planet = { name = "Shirer Valles" class = "pc_rocky_airless_region" orbit_distance = 0 orbit_angle = 120 has_ring = no }
+	planet = { name = "Herodotus Planitia" class = "pc_rocky_airless_region" orbit_distance = 10 orbit_angle = 120 has_ring = no  planet_size = 15
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Xenophon Terra" class = "pc_rocky_airless_region" orbit_distance = 0 orbit_angle = 120 has_ring = no  planet_size = 16
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Shirer Valles" class = "pc_rocky_airless_region" orbit_distance = 0 orbit_angle = 120 has_ring = no  planet_size = 7
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+			}
+		}
 	planet = { name = "Alpha Centauri Ae I" class = "pc_rocky_airless" orbit_distance = 50 orbit_angle = 180 size = 15 has_ring = no 
-		moon = { name = "Pratchett Mons" class = "pc_rocky_airless_region" orbit_distance = 7 has_ring = no }
-		moon = { name = "Heller Terra" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no }
+		moon = { name = "Pratchett Mons" class = "pc_rocky_airless_region" orbit_distance = 7 has_ring = no  planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+			}
+		}
+		moon = { name = "Heller Terra" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no  planet_size = 13
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+			}
+		}
 	}
 
 }
@@ -31,41 +88,146 @@ acenab_initializer = {
 	name = "Alpha Centauri Ab" class = "sc_rocky_atmosphere"
 	
 	planet = { name = "Alpha Centauri Ab" class = "pc_rocky_atmosphere" orbit_distance = 1 orbit_angle = 1 size = 40 has_ring = no }
-	planet = { name = "Chiron Regio" class = "pc_rocky_atmosphere_region" orbit_distance = 15 orbit_angle = 90 has_ring = no }
-	planet = { name = "Hyloneme Regio" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 90 has_ring = no }
-	planet = { name = "Kinnaras Regio" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 90 has_ring = no }
-	planet = { name = "Cyllarus Regio" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 90 has_ring = no }
+	planet = { name = "Chiron Regio" class = "pc_rocky_atmosphere_region" orbit_distance = 15 orbit_angle = 90 has_ring = no  planet_size = 20 }
+	planet = { name = "Hyloneme Regio" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 90 has_ring = no  planet_size = 17 }
+	planet = { name = "Kinnaras Regio" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 90 has_ring = no  planet_size = 22 }
+	planet = { name = "Cyllarus Regio" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 90 has_ring = no  planet_size = 11 }
 	
-	planet = { name = "Alpha Centauri Ab I" class = "pc_asteroid_hab" orbit_distance = 35 orbit_angle = 60 has_ring = no }
-	planet = { name = "Alpha Centauri Ab II" class = "pc_asteroid_hab" orbit_distance = 15 orbit_angle = -140 has_ring = no }
-	planet = { name = "Alpha Centauri Ab III" class = "pc_asteroid_hab" orbit_distance = 15 orbit_angle = 75 has_ring = no }
+	planet = { name = "Alpha Centauri Ab I" class = "pc_asteroid_hab" orbit_distance = 35 orbit_angle = 60 has_ring = no  planet_size = 11
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Alpha Centauri Ab II" class = "pc_asteroid_hab" orbit_distance = 15 orbit_angle = -140 has_ring = no  planet_size = 12
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Alpha Centauri Ab III" class = "pc_asteroid_hab" orbit_distance = 15 orbit_angle = 75 has_ring = no  planet_size = 9
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 
 }
 acenac_initializer = {
 	name = "Alpha Centauri Ac" class = "sc_rocky_atmosphere"
 	
 	planet = { name = "Alpha Centauri Ac" class = "pc_earthlike" orbit_distance = 1 orbit_angle = 1 size = 30 has_ring = no entity = "alpine_planet_02_entity"}
-	planet = { name = "Terra Vintosa" class = "pc_cold_region" orbit_distance = 12 orbit_angle = 72 has_ring = no }
-	planet = { name = "Terra Frigida" class = "pc_cold_region" orbit_distance = 0 orbit_angle = 72 has_ring = no }
-	planet = { name = "Terra Miseriae" class = "pc_cold_region" orbit_distance = 0 orbit_angle = 72 has_ring = no }
-	planet = { name = "Terra Amara" class = "pc_cold_region" orbit_distance = 0 orbit_angle = 72 has_ring = no }
-	planet = { name = "Terra Miraculorum" class = "pc_cold_region" orbit_distance = 0 orbit_angle = 72 has_ring = no }
+	planet = { name = "Terra Vintosa" class = "pc_cold_region" orbit_distance = 12 orbit_angle = 72 has_ring = no  planet_size = 19
+			init_effect = {
+				add_modifier = {
+					modifier = "alien_biosphere"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Terra Frigida" class = "pc_cold_region" orbit_distance = 0 orbit_angle = 72 has_ring = no  planet_size = 17
+			init_effect = {
+				add_modifier = {
+					modifier = "alien_biosphere"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Terra Miseriae" class = "pc_cold_region" orbit_distance = 0 orbit_angle = 72 has_ring = no  planet_size = 17
+			init_effect = {
+				add_modifier = {
+					modifier = "alien_biosphere"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Terra Amara" class = "pc_cold_region" orbit_distance = 0 orbit_angle = 72 has_ring = no  planet_size = 14
+			init_effect = {
+				add_modifier = {
+					modifier = "alien_biosphere"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Terra Miraculorum" class = "pc_cold_region" orbit_distance = 0 orbit_angle = 72 has_ring = no  planet_size = 11
+			init_effect = {
+				add_modifier = {
+					modifier = "alien_biosphere"
+					days = -1
+				}
+			}
+		}
 
 }
 acenad_initializer = {
 	name = "Alpha Centauri Ad" class = "sc_rocky_airless"
 	
 	planet = { name = "Alpha Centauri Ad" class = "pc_rocky_airless" orbit_distance = 1 orbit_angle = 1 size = 20 has_ring = no }
-	planet = { name = "Hachiman Planitia" class = "pc_rocky_atmosphere_region" orbit_distance = 5 orbit_angle = 120 has_ring = no }
-	planet = { name = "Ryujin Terra" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 120 has_ring = no }
-	planet = { name = "Nuparikor Terra" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 120 has_ring = no }
+	planet = { name = "Hachiman Planitia" class = "pc_rocky_airless_region" orbit_distance = 5 orbit_angle = 120 has_ring = no  planet_size = 13
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Ryujin Terra" class = "pc_rocky_airless_region" orbit_distance = 0 orbit_angle = 120 has_ring = no  planet_size = 15
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Nuparikor Terra" class = "pc_rocky_airless_region" orbit_distance = 0 orbit_angle = 120 has_ring = no  planet_size = 15
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+			}
+		}
 	
-	planet = { name = "Alpha Centauri Ad I" class = "pc_rocky_airless" orbit_distance = 25 orbit_angle = 60 has_ring = no size = 10
-		moon = { name = "Arcturus Fluctus" class = "pc_rocky_airless_region" orbit_distance = 7 has_ring = no }
-		moon = { name = "Ursula Montes" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no }
-		moon = { name = "Xiongmao Fossae" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no }
+	planet = { name = "Alpha Centauri Ad I" class = "pc_rocky_airless" orbit_distance = 25 orbit_angle = 60 has_ring = no size = 10 
+		moon = { name = "Arcturus Fluctus" class = "pc_rocky_airless_region" orbit_distance = 7 has_ring = no  planet_size = 12
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+		moon = { name = "Ursula Montes" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no  planet_size = 12
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+		moon = { name = "Xiongmao Fossae" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no  planet_size = 12
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 	}
-	planet = { name = "Alpha Centauri Ad II" class = "pc_asteroid_hab" orbit_distance = 45 orbit_angle = 200 has_ring = no }
+	planet = { name = "Alpha Centauri Ad II" class = "pc_asteroid_hab" orbit_distance = 45 orbit_angle = 200 has_ring = no  planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 
 }
 
@@ -79,9 +241,42 @@ acenbb_initializer = {
 	name = "Alpha Centauri Bb" class = "sc_rocky_airless"
 	
 	planet = { name = "Alpha Centauri Bb" class = "pc_rocky_airless" orbit_distance = 1 orbit_angle = 1 size = 40 has_ring = no }
-	planet = { name = "Wilusa Montes" class = "pc_rocky_airless_region" orbit_distance = 15 orbit_angle = 120 has_ring = no }
-	planet = { name = "Hattusa Planitia" class = "pc_rocky_airless_region" orbit_distance = 0 orbit_angle = 120 has_ring = no }
-	planet = { name = "Luwiya Chaos" class = "pc_rocky_airless_region" orbit_distance = 0 orbit_angle = 120 has_ring = no }
+	planet = { name = "Wilusa Montes" class = "pc_rocky_airless_region" orbit_distance = 15 orbit_angle = 120 has_ring = no  planet_size = 16
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+				add_modifier = {
+					modifier = "high_temperatures"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Hattusa Planitia" class = "pc_rocky_airless_region" orbit_distance = 0 orbit_angle = 120 has_ring = no  planet_size = 16
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+				add_modifier = {
+					modifier = "high_temperatures"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Luwiya Chaos" class = "pc_rocky_airless_region" orbit_distance = 0 orbit_angle = 120 has_ring = no  planet_size = 15
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+				add_modifier = {
+					modifier = "high_temperatures"
+					days = -1
+				}
+			}
+		}
 }
 #Proxima Centauri
 proxima_initializer = {
@@ -93,61 +288,201 @@ proximab_initializer = {
 	name = "Proxima Centauri b" class = "sc_rocky_airless"
 	
 	planet = { name = "Proxima Centauri b" class = "pc_rocky_airless" orbit_distance = 1 orbit_angle = 1 size = 30 has_ring = no }
-	planet = { name = "Atlasov Fossae" class = "pc_rocky_atmosphere_region" orbit_distance = 15 orbit_angle = 90 has_ring = no }
-	planet = { name = "Bouvet Chasmata" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 90 has_ring = no }
-	planet = { name = "Pingalap Fossae" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 90 has_ring = no }
-	planet = { name = "Floreana Terra" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 90 has_ring = no }
+	planet = { name = "Atlasov Fossae" class = "pc_rocky_atmosphere_region" orbit_distance = 15 orbit_angle = 90 has_ring = no  planet_size = 21
+			init_effect = {
+				add_modifier = {
+					modifier = "high_g"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Bouvet Chasmata" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 90 has_ring = no  planet_size = 22
+			init_effect = {
+				add_modifier = {
+					modifier = "high_g"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Pingalap Fossae" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 90 has_ring = no  planet_size = 24
+			init_effect = {
+				add_modifier = {
+					modifier = "high_g"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Floreana Terra" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 90 has_ring = no  planet_size = 22
+			init_effect = {
+				add_modifier = {
+					modifier = "high_g"
+					days = -1
+				}
+			}
+		}
 }
 #Proxima Centauri asteroids
 proximac_initializer = {
 	name = "Proxima Centauri c" class = "sc_rocky_airless"
 	
-	planet = { name = "Proxima Centauri c" class = "pc_rocky_airless" orbit_distance = 1 orbit_angle = 1 size = 15 has_ring = no }
-	planet = { name = "Deception" class = "pc_rocky_atmosphere_region" orbit_distance = 5 orbit_angle = 180 has_ring = no }
-	planet = { name = "Diego Garcia" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 180 has_ring = no }
+	planet = { name = "Proxima Centauri c" class = "pc_rocky_airless" orbit_distance = 1 orbit_angle = 1 size = 15 has_ring = no  planet_size = 11
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Deception" class = "pc_rocky_atmosphere_region" orbit_distance = 5 orbit_angle = 180 has_ring = no  planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Diego Garcia" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 180 has_ring = no  planet_size = 9
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 }
 proximad_initializer = {
 	name = "Proxima Centauri d" class = "sc_asteroidc"
 	
-	planet = { name = "Proxima Centauri d" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no }
+	planet = { name = "Proxima Centauri d" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no  planet_size = 4
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 }
 proximae_initializer = {
 	name = "Proxima Centauri e" class = "sc_asteroidc"
 	
-	planet = { name = "Proxima Centauri e" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no }
-	planet = { name = "Proxima Centauri e I" class = "pc_asteroid_hab" orbit_distance = 15 orbit_angle = 20 size = 8 has_ring = no }
+	planet = { name = "Proxima Centauri e" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no  planet_size = 9
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Proxima Centauri e I" class = "pc_asteroid_hab" orbit_distance = 15 orbit_angle = 20 size = 8 has_ring = no  planet_size = 6
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 }
 proximaf_initializer = {
 	name = "Proxima Centauri f" class = "sc_asteroidc"
 	
-	planet = { name = "Proxima Centauri f" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no }
+	planet = { name = "Proxima Centauri f" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no  planet_size = 12
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 }
 proximag_initializer = {
 	name = "Proxima Centauri g" class = "sc_asteroidc"
 	
-	planet = { name = "Proxima Centauri g" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 15 has_ring = no }
-	planet = { name = "Proxima Centauri g I" class = "pc_asteroid_hab" orbit_distance = 100 orbit_angle = 20 size = 10 has_ring = no }
-	planet = { name = "Proxima Centauri e II" class = "pc_asteroid_hab" orbit_distance = 20 orbit_angle = 130 size = 8 has_ring = no }
+	planet = { name = "Proxima Centauri g" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 15 has_ring = no  planet_size = 13
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Proxima Centauri g I" class = "pc_asteroid_hab" orbit_distance = 100 orbit_angle = 20 size = 10 has_ring = no  planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Proxima Centauri e II" class = "pc_asteroid_hab" orbit_distance = 20 orbit_angle = 130 size = 8 has_ring = no  planet_size = 9
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 }
 proximah_initializer = {
 	name = "Proxima Centauri h" class = "sc_asteroidc"
 	
-	planet = { name = "Proxima Centauri h" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no }
+	planet = { name = "Proxima Centauri h" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no  planet_size = 11
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 }
 proximai_initializer = {
 	name = "Proxima Centauri i" class = "sc_asteroidc"
 	
-	planet = { name = "Proxima Centauri i" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no }
-	planet = { name = "Proxima Centauri i I" class = "pc_asteroid_hab" orbit_distance = 60 orbit_angle = -150 size = 8 has_ring = no }
+	planet = { name = "Proxima Centauri i" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no  planet_size = 9
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Proxima Centauri i I" class = "pc_asteroid_hab" orbit_distance = 60 orbit_angle = -150 size = 8 has_ring = no  planet_size = 9
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 }
 proximaj_initializer = {
 	name = "Proxima Centauri j" class = "sc_asteroidc"
 	
-	planet = { name = "Proxima Centauri j" class = "pc_asteroid_hab" orbit_distance = 20 orbit_angle = 1 size = 15 has_ring = no }
-	planet = { name = "Proxima Centauri j I" class = "pc_asteroid_hab" orbit_distance = 30 orbit_angle = 179 size = 8 has_ring = no }
+	planet = { name = "Proxima Centauri j" class = "pc_asteroid_hab" orbit_distance = 20 orbit_angle = 1 size = 15 has_ring = no  planet_size = 12
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Proxima Centauri j I" class = "pc_asteroid_hab" orbit_distance = 30 orbit_angle = 179 size = 8 has_ring = no  planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 }
 proximak_initializer = {
 	name = "Proxima Centauri k" class = "sc_asteroidc"
 	
-	planet = { name = "Proxima Centauri k" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no }
+	planet = { name = "Proxima Centauri k" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no  planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 }

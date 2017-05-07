@@ -1,34 +1,18 @@
-@primary = 0.80
-@secondary = 0.60
-@tertiary = 0.20
-
 trait_pc_warm_region_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_desert_preference.dds"
 	modifier = {
-		pc_desert_habitability = @primary	
-		pc_arid_habitability = @primary
-		pc_savannah_habitability = @primary
-		
-		pc_tropical_habitability = @primary
-		pc_continental_habitability = @primary
-		pc_tundra_habitability = @primary
-		pc_arctic_habitability = @primary
-		pc_ocean_habitability = @primary
-		pc_alpine_habitability = @primary
-		
-		pc_warm_region = 1.0
-		pc_cold_region = 0.6
-		pc_temperate_region = 1.0
-		pc_asteroid_hab = 0.2
-		pc_iceteroid_hab = 0.2
-		pc_rocky_airless_hab = 0.2
-		pc_rocky_atmosphere_hab = 0.3
-		pc_icy_airless_hab = 0.2
-		pc_icy_atmosphere_hab = 0.3
-		pc_rocky_airless_region = 0.2
-		pc_icy_airless_region = 0.2
-		pc_rocky_atmosphere_region = 0.3
-		pc_icy_atmosphere_region = 0.3
-		
+		pc_warm_region_habitability = 1.0
+		pc_cold_region_habitability = 0.6
+		pc_temperate_region_habitability = 1.0
+		pc_asteroid_hab_habitability = 0.3
+		pc_iceteroid_hab_habitability = 0.3
+		pc_rocky_airless_hab_habitability = 0.3
+		pc_rocky_atmosphere_hab_habitability = 0.3
+		pc_icy_airless_hab_habitability = 0.3
+		pc_icy_atmosphere_hab_habitability = 0.3
+		pc_rocky_airless_region_habitability = 0.3
+		pc_icy_airless_region_habitability = 0.3
+		pc_rocky_atmosphere_region_habitability = 0.3
+		pc_icy_atmosphere_region_habitability = 0.3
 	}
 }

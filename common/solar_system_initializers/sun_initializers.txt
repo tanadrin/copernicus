@@ -2,11 +2,15 @@
 earth_initializer = { 
 	name = "Earth" class = "sc_earth"
 	usage = custom_empire
-	planet = { name = "Earth" class = "pc_earth" orbit_distance = 1 orbit_angle = 270 size = 50 has_ring = no entity = "continental_planet_earth_entity" has_ring = no }
+	planet = { name = "Earth" class = "pc_earth" orbit_distance = 1 orbit_angle = 270 size = 50 has_ring = no entity = "continental_planet_earth_entity" has_ring = no
+		init_effect = {
+			set_planet_flag = start_surveyed
+		} 
+	}
 	
 	change_orbit = 15
 	
-	planet = { name = "North America" home_planet = yes class = "pc_temperate_region" orbit_distance = 0 orbit_angle = 51 has_ring = no 
+	planet = { name = "North America" home_planet = yes class = "pc_temperate_region" orbit_distance = 0 orbit_angle = 51 has_ring = no planet_size = 20
 		init_effect = {
 			every_country = {
 				limit = {
@@ -15,25 +19,48 @@ earth_initializer = {
 				save_event_target_as = north_america
 			}
 			set_owner = event_target:north_america
-			set_controller = event_target:north_america
-			set_capital = yes
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
 				set_building = building_capital_2
-				add_resource = {
-					resource = food
-					amount = 1
-					replace = yes
-				}
-				add_resource = {
-					resource = minerals
-					amount = 1
-				}
 				create_pop = { species = owner_main_species }
 			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_hydroponics_farm_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_hydroponics_farm_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_power_plant_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_mining_network_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_basic_science_lab_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_basic_science_lab_1
+				create_pop = { species = owner_main_species }
+			}
+			set_planet_flag = earth  
+			set_planet_flag = UN  
+			set_planet_flag = north_america_continent
+			set_planet_flag = start_surveyed
 		}
 	}
-	planet = { name = "South America" home_planet = yes class = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no 
+	planet = { name = "South America" home_planet = yes class = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no planet_size = 19
 		init_effect = {
 			every_country = {
 				limit = {
@@ -44,20 +71,47 @@ earth_initializer = {
 			set_owner = event_target:south_america
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
-				add_resource = {
-					resource = food
-					amount = 1
-					replace = yes
-				}
-				add_resource = {
-					resource = minerals
-					amount = 1
-				}
+				set_building = building_capital_2
 				create_pop = { species = owner_main_species }
 			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_hydroponics_farm_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_hydroponics_farm_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_power_plant_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_mining_network_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_basic_science_lab_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_basic_science_lab_1
+				create_pop = { species = owner_main_species }
+			}
+			set_planet_flag = earth  
+			set_planet_flag = UN  
+			set_planet_flag = south_america_continent
+			set_planet_flag = start_surveyed
 		}
 	}
 	planet = { name = "Europe" home_planet = yes class = "pc_temperate_region" orbit_distance = 0 orbit_angle = 51 has_ring = no 
+	planet_size = 18
 		init_effect = {
 			every_country = {
 				limit = {
@@ -68,20 +122,46 @@ earth_initializer = {
 			set_owner = event_target:europe
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
-				add_resource = {
-					resource = food
-					amount = 1
-					replace = yes
-				}
-				add_resource = {
-					resource = minerals
-					amount = 1
-				}
+				set_building = building_capital_2
 				create_pop = { species = owner_main_species }
 			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_hydroponics_farm_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_hydroponics_farm_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_power_plant_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_mining_network_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_basic_science_lab_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_basic_science_lab_1
+				create_pop = { species = owner_main_species }
+			}
+			set_planet_flag = earth  
+			set_planet_flag = UN  
+			set_planet_flag = europe_continent
+			set_planet_flag = start_surveyed
 		}
 	}
-	planet = { name = "Africa" home_planet = yes class = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no 
+	planet = { name = "Africa" home_planet = yes class = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no planet_size = 21
 		init_effect = {
 			every_country = {
 				limit = {
@@ -92,20 +172,46 @@ earth_initializer = {
 			set_owner = event_target:africa
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
-				add_resource = {
-					resource = food
-					amount = 1
-					replace = yes
-				}
-				add_resource = {
-					resource = minerals
-					amount = 1
-				}
+				set_building = building_capital_2
 				create_pop = { species = owner_main_species }
 			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_hydroponics_farm_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_hydroponics_farm_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_power_plant_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_mining_network_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_basic_science_lab_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_basic_science_lab_1
+				create_pop = { species = owner_main_species }
+			}
+			set_planet_flag = earth  
+			set_planet_flag = UN  
+			set_planet_flag = africa_continent
+			set_planet_flag = start_surveyed
 		}
 	}
-	planet = { name = "South Asia" home_planet = yes class = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no 
+	planet = { name = "South Asia" home_planet = yes class = "pc_warm_region" orbit_distance = 0 orbit_angle = 51 has_ring = no planet_size = 22
 		init_effect = {
 			every_country = {
 				limit = {
@@ -116,20 +222,46 @@ earth_initializer = {
 			set_owner = event_target:south_asia
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
-				add_resource = {
-					resource = food
-					amount = 1
-					replace = yes
-				}
-				add_resource = {
-					resource = minerals
-					amount = 1
-				}
+				set_building = building_capital_2
 				create_pop = { species = owner_main_species }
 			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_hydroponics_farm_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_hydroponics_farm_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_power_plant_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_mining_network_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_basic_science_lab_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_basic_science_lab_1
+				create_pop = { species = owner_main_species }
+			}
+			set_planet_flag = earth  
+			set_planet_flag = UN  
+			set_planet_flag = south_asia_continent
+			set_planet_flag = start_surveyed
 		}
 	}
-	planet = { name = "East Asia" home_planet = yes class = "pc_temperate_region" orbit_distance = 0 orbit_angle = 51 has_ring = no  
+	planet = { name = "East Asia" home_planet = yes class = "pc_temperate_region" orbit_distance = 0 orbit_angle = 51 has_ring = no  planet_size = 23
 		init_effect = {
 			every_country = {
 				limit = {
@@ -140,27 +272,87 @@ earth_initializer = {
 			set_owner = event_target:pacific_compact
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
-				add_resource = {
-					resource = food
-					amount = 1
-					replace = yes
-				}
-				add_resource = {
-					resource = minerals
-					amount = 1
-				}
+				set_building = building_capital_2
 				create_pop = { species = owner_main_species }
 			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_hydroponics_farm_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_hydroponics_farm_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_power_plant_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_mining_network_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_basic_science_lab_1
+				create_pop = { species = owner_main_species }
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = building_basic_science_lab_1
+				create_pop = { species = owner_main_species }
+			}
+			set_planet_flag = earth  
+			set_planet_flag = UN  
+			set_planet_flag = east_asia_continent
+			set_planet_flag = start_surveyed
 		}
 	}
-	planet = { name = "Antarctica" class = "pc_cold_region" orbit_distance = 0 orbit_angle = 51 has_ring = no }
+	planet = { name = "Antarctica" class = "pc_cold_region" orbit_distance = 0 orbit_angle = 51 has_ring = no planet_size = 12
+		init_effect ={
+			set_planet_flag = antarctica_continent 
+			set_planet_flag = earth
+			set_planet_flag = start_surveyed
+		}
+	}	
+
 	
 	change_orbit = 200
 	
 	planet = { name = "The Moon" class = "pc_moon" entity = "cold_barren_planet_luna_entity" orbit_distance = 0 orbit_angle = 120 size = 20 has_ring = no change_orbit = 5
-		moon = { name = "Mare Tranquilitas" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no }
-		moon = { name = "Oceanus Procellarum" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no }
-		moon = { name = "Aitken Basin" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no }
+		init_effect = {
+			set_planet_flag = start_surveyed
+		}
+		moon = { name = "Mare Tranquilitatis" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no planet_size = 12
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+			set_planet_flag = start_surveyed
+			}
+		}
+		moon = { name = "Oceanus Procellarum" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no planet_size = 13
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+			set_planet_flag = start_surveyed
+			}
+		}
+		moon = { name = "Aitken Basin" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+			set_planet_flag = start_surveyed
+			}
+		}
 	}
 }
 sun_initializer = {
@@ -175,203 +367,826 @@ mercury_initializer = {
 	
 	change_orbit = 10
 	
-	planet = { name = "Caloris Basin" class = "pc_rocky_airless_region" orbit_distance = 0 orbit_angle = 180 has_ring = no }
-	planet = { name = "Suisei Planitia" class = "pc_rocky_airless_region" orbit_distance = 0 orbit_angle = 180 has_ring = no }
+	planet = { name = "Caloris Basin" class = "pc_rocky_airless_region" orbit_distance = 0 orbit_angle = 180 has_ring = no planet_size = 11
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+				add_modifier = {
+					modifier = "high_temperatures"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Suisei Planitia" class = "pc_rocky_airless_region" orbit_distance = 0 orbit_angle = 180 has_ring = no planet_size = 11
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+				add_modifier = {
+					modifier = "high_temperatures"
+					days = -1
+				}
+			}
+		}
 }
 mars_initializer = { 
 	name = "Mars" class = "sc_mars"
 	
-	planet = { name = "Mars" class = "pc_mars" orbit_distance = 1 orbit_angle = 270 size = 30 has_ring = no entity = "barren_planet_mars_entity"}
+	planet = { name = "Mars" class = "pc_mars" orbit_distance = 1 orbit_angle = 270 size = 30 has_ring = no entity = "barren_planet_mars_entity" 
+		init_effect = {
+			set_planet_flag = start_surveyed
+		}
+	}
 	
 	change_orbit = 7
 	
-	planet = { name = "Arabia Terra" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 72 has_ring = no }
-	planet = { name = "Utopia Planitia" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 72 has_ring = no }
-	planet = { name = "Argyre Planitia" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 72 has_ring = no home_planet = yes }
-	planet = { name = "Syrtis Major" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 72 has_ring = no }
-	planet = { name = "Hellas Basin" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 72 has_ring = no }
+	planet = { name = "Arabia Terra" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 72 has_ring = no planet_size = 18
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+			set_planet_flag = start_surveyed
+			}
+		}
+	planet = { name = "Utopia Planitia" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 72 has_ring = no planet_size = 15
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+			set_planet_flag = start_surveyed
+			}
+		}
+	planet = { name = "Argyre Planitia" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 72 has_ring = no home_planet = yes planet_size = 12
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+			set_planet_flag = start_surveyed
+			}
+		}
+	planet = { name = "Syrtis Major" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 72 has_ring = no planet_size = 15
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+			set_planet_flag = start_surveyed
+			}
+		}
+	planet = { name = "Hellas Basin" class = "pc_rocky_atmosphere_region" orbit_distance = 0 orbit_angle = 72 has_ring = no planet_size = 13
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+			set_planet_flag = start_surveyed
+			}
+		}
 	
 	change_orbit = 60
 	
-	planet = { name = "Phobos" class = "pc_asteroid_hab" orbit_distance = 0 orbit_angle = 40 size = 10 has_ring = no }
-	planet = { name = "Deimos" class = "pc_asteroid_hab" orbit_distance = 20 orbit_angle = 40 size = 10 has_ring = no }
+	planet = { name = "Phobos" class = "pc_asteroid_hab" orbit_distance = 0 orbit_angle = 40 size = 10 has_ring = no planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			set_planet_flag = start_surveyed
+			}
+		}
+	planet = { name = "Deimos" class = "pc_asteroid_hab" orbit_distance = 20 orbit_angle = 40 size = 10 has_ring = no planet_size = 9
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			set_planet_flag = start_surveyed
+			}
+		}
 }
 ceres_initializer = {
 	name = "1Ceres" class = "sc_icy_airless"
 	
-	planet = { name = "1Ceres" class = "pc_icy_airless_hab" orbit_distance = 1 orbit_angle = 1 size = 15 has_ring = no }
+	planet = { name = "1Ceres" class = "pc_icy_airless_hab" orbit_distance = 1 orbit_angle = 1 size = 15 has_ring = no planet_size = 12
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 }
 vesta_initializer = {
 	name = "4 Vesta" class = "sc_asteroidc"
 	
-	planet = { name = "4 Vesta" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 15 has_ring = no }
+	planet = { name = "4 Vesta" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 15 has_ring = no planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 }
 jupiter_initializer = { 
 	name = "Jupiter" class = "sc_jupiter"
 	
 	planet = { name = "Jupiter" class = "pc_jupiter" orbit_distance = 1 orbit_angle = 270 size = 80 has_ring = no entity = "gas_giant_jupiter_entity" }
-	planet = { name = "Amalthea" class = "pc_asteroid_hab" orbit_distance = 30 orbit_angle = 51 has_ring = no }
+	planet = { name = "Amalthea" class = "pc_asteroid_hab" orbit_distance = 30 orbit_angle = 51 has_ring = no planet_size = 9
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+				add_modifier = {
+					modifier = "radiation_field"
+					days = -1
+				}
+			}
+		}
 	planet = { name = "Io" class = "pc_rocky_airless" orbit_distance = 30 orbit_angle = 120 size = 20 has_ring = no
-		moon = { name = "Lei-Zi Fluctus" class = "pc_rocky_airless_region" orbit_distance = 5 has_ring = no }
-		moon = { name = "Tung-Yo Fluctus" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no }
-		moon = { name = "Tawhaki Vallis" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no }
+		moon = { name = "Lei-Zi Fluctus" class = "pc_rocky_airless_region" orbit_distance = 5 has_ring = no planet_size = 14
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+				add_modifier = {
+					modifier = "radiation_field"
+					days = -1
+				}
+			}
+		}
+		moon = { name = "Tung-Yo Fluctus" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no planet_size = 13
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+				add_modifier = {
+					modifier = "radiation_field"
+					days = -1
+				}
+			}
+		}
+		moon = { name = "Tawhaki Vallis" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no planet_size = 13
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+				add_modifier = {
+					modifier = "radiation_field"
+					days = -1
+				}
+			}
+		}
 	}
 	planet = { name = "Europa" class = "pc_icy_airless" orbit_distance = 20 orbit_angle = 180 size = 20 has_ring = no
-		moon = { name = "Conamara Chaos" class = "pc_icy_airless_region" orbit_distance = 5 has_ring = no }
-		moon = { name = "Tara Regio" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no }
+		moon = { name = "Conamara Chaos" class = "pc_icy_airless_region" orbit_distance = 5 has_ring = no planet_size = 12
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+				add_modifier = {
+					modifier = "radiation_field"
+					days = -1
+				}
+				add_modifier = {
+					modifier = "subsurface_seas"
+					days = -1
+				}
+			}
+		}
+		moon = { name = "Tara Regio" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no planet_size = 11
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+				add_modifier = {
+					modifier = "radiation_field"
+					days = -1
+				}
+			}
+		}
 	}
 	planet = { name = "Ganymede" class = "pc_rocky_airless" orbit_distance = 20 orbit_angle = 90 size = 20 has_ring = no
-		moon = { name = "Galileo Regio" class = "pc_rocky_airless_region" orbit_distance = 5 has_ring = no }
-		moon = { name = "Uruk Regio" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no }
-		moon = { name = "Xibalba Regio" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no }
-		moon = { name = "Heliopolis Facula" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no }
+		moon = { name = "Galileo Regio" class = "pc_rocky_airless_region" orbit_distance = 5 has_ring = no planet_size = 12
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+				add_modifier = {
+					modifier = "radiation_field"
+					days = -1
+				}
+				add_modifier = {
+					modifier = "subsurface_seas"
+					days = -1
+				}
+			}
+		}
+		moon = { name = "Uruk Regio" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+				add_modifier = {
+					modifier = "radiation_field"
+					days = -1
+				}
+			}
+		}
+		moon = { name = "Xibalba Regio" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no planet_size = 9
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+				add_modifier = {
+					modifier = "radiation_field"
+					days = -1
+				}
+			}
+		}
+		moon = { name = "Heliopolis Facula" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+				add_modifier = {
+					modifier = "radiation_field"
+					days = -1
+				}
+			}
+		}
 	}
 	planet = { name = "Callisto" class = "pc_rocky_airless" orbit_distance = 20 orbit_angle = 180 size = 20 has_ring = no 
-		moon = { name = "Valhalla" class = "pc_rocky_airless_region" orbit_distance = 5 has_ring = no }
-		moon = { name = "Utgard" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no }
+		moon = { name = "Valhalla" class = "pc_rocky_airless_region" orbit_distance = 5 has_ring = no planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+				add_modifier = {
+					modifier = "radiation_field"
+					days = -1
+				}
+			}
+		}
+		moon = { name = "Utgard" class = "pc_rocky_airless_region" orbit_distance = 0 has_ring = no planet_size = 9
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+				add_modifier = {
+					modifier = "radiation_field"
+					days = -1
+				}
+			}
+		}
 	}
-	planet = { name = "Himalia" class = "pc_asteroid_hab" orbit_distance = 60 orbit_angle = 100 has_ring = no }
-	planet = { name = "Elara" class = "pc_asteroid_hab" orbit_distance = 10 orbit_angle = 20 has_ring = no }
+	planet = { name = "Himalia" class = "pc_asteroid_hab" orbit_distance = 60 orbit_angle = 100 has_ring = no planet_size = 8
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+				add_modifier = {
+					modifier = "radiation_field"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Elara" class = "pc_asteroid_hab" orbit_distance = 10 orbit_angle = 20 has_ring = no planet_size = 8
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+				add_modifier = {
+					modifier = "radiation_field"
+					days = -1
+				}
+			}
+		}
 }
 saturn_initializer = { 
 	name = "Saturn" class = "sc_jovian"
 	
 	planet = { name = "Saturn" class = "pc_jovian" orbit_distance = 1 orbit_angle = 270 size = 80 entity = "gas_giant_05_entity" has_ring = yes }
-	planet = { name = "Janus" class = "pc_iceteroid_hab" orbit_distance = 40 orbit_angle =10 size = 8 has_ring = no }
-	planet = { name = "Mimas" class = "pc_icy_airless_hab" orbit_distance = 10 orbit_angle = 100 size = 10 has_ring = no }
-	planet = { name = "Enceladus" class = "pc_icy_airless_hab" orbit_distance = 10 orbit_angle = 130 size = 10 has_ring = no }
+	planet = { name = "Janus" class = "pc_iceteroid_hab" orbit_distance = 40 orbit_angle =10 size = 8 has_ring = no planet_size = 8
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Mimas" class = "pc_icy_airless_hab" orbit_distance = 10 orbit_angle = 100 size = 10 has_ring = no planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Enceladus" class = "pc_icy_airless_hab" orbit_distance = 10 orbit_angle = 130 size = 10 has_ring = no planet_size = 13
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+				add_modifier = {
+					modifier = "subsurface_seas"
+					days = -1
+				}
+			}
+		}
 	planet = { name = "Tethys" class = "pc_icy_airless" orbit_distance = 10 orbit_angle = 180 size = 20 has_ring = no
-		moon = { name = "Odysseus" class = "pc_icy_airless_region" orbit_distance = 5 has_ring = no }
-		moon = { name = "Ithaca Chasma" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no }
+		moon = { name = "Odysseus" class = "pc_icy_airless_region" orbit_distance = 5 has_ring = no planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+		moon = { name = "Ithaca Chasma" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no  planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 	}
-	planet = { name = "Dione" class = "pc_icy_airless_hab" orbit_distance = 10 orbit_angle = 50 size = 10 has_ring = no }
-	planet = { name = "Rhea" class = "pc_icy_airless_hab" orbit_distance = 10 orbit_angle = 200 size = 10 has_ring = no }
+	planet = { name = "Dione" class = "pc_icy_airless_hab" orbit_distance = 10 orbit_angle = 50 size = 10 has_ring = no planet_size = 9
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Rhea" class = "pc_icy_airless_hab" orbit_distance = 10 orbit_angle = 200 size = 10 has_ring = no planet_size = 9
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 	planet = { name = "Titan" class = "pc_icy_atmosphere" orbit_distance = 20 orbit_angle = 120 size = 20 has_ring = no
-		moon = { name = "Dilmun" class = "pc_icy_atmosphere_region" orbit_distance = 5 has_ring = no }
-		moon = { name = "Xanadu" class = "pc_icy_atmosphere_region" orbit_distance = 0 has_ring = no }
-		moon = { name = "Senkyo" class = "pc_icy_atmosphere_region" orbit_distance = 0 has_ring = no }
+		moon = { name = "Dilmun" class = "pc_icy_atmosphere_region" orbit_distance = 5 has_ring = no planet_size = 11
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+				add_modifier = {
+					modifier = "hydrocarbon_chemistry"
+					days = -1
+				}
+			}
+		}
+		moon = { name = "Xanadu" class = "pc_icy_atmosphere_region" orbit_distance = 0 has_ring = no planet_size = 12
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+			}
+		}
+		moon = { name = "Senkyo" class = "pc_icy_atmosphere_region" orbit_distance = 0 has_ring = no planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "low_g"
+					days = -1
+				}
+			}
+		}
 	}
-	planet = { name = "Hyperion" class = "pc_icy_airless_hab" orbit_distance = 20 orbit_angle = 200 size = 10 has_ring = no }
+	planet = { name = "Hyperion" class = "pc_icy_airless_hab" orbit_distance = 20 orbit_angle = 200 size = 10 has_ring = no planet_size = 13
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 	planet = { name = "Iapetus" class = "pc_icy_airless" orbit_distance = 20 orbit_angle = 180 size = 20 has_ring = no 
-		moon = { name = "Ronceveaux Terra" class = "pc_icy_atmosphere_region" orbit_distance = 5 has_ring = no }
-		moon = { name = "Cassini Regio" class = "pc_icy_atmosphere_region" orbit_distance = 0 has_ring = no }
+		moon = { name = "Ronceveaux Terra" class = "pc_icy_atmosphere_region" orbit_distance = 5 has_ring = no planet_size = 14
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+		moon = { name = "Cassini Regio" class = "pc_icy_atmosphere_region" orbit_distance = 0 has_ring = no planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 	}
-	planet = { name = "Phoebe" class = "pc_icy_airless_hab" orbit_distance = 50 orbit_angle = 100 has_ring = no }
+	planet = { name = "Phoebe" class = "pc_icy_airless_hab" orbit_distance = 50 orbit_angle = 100 has_ring = no planet_size = 7
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 }
 uranus_initializer = { 
 	name = "Uranus" class = "sc_uranus"
 	
 	planet = { name = "Uranus" class = "pc_uranus" orbit_distance = 1 orbit_angle = 270 size = 50 has_ring = no entity = "uranus_entity"}
-	planet = { name = "Puck" class = "pc_iceteroid_hab" orbit_distance = 30 orbit_angle = 10 size = 8 has_ring = no }
-	planet = { name = "Miranda" class = "pc_icy_airless_hab" orbit_distance = 10 orbit_angle = 100 size = 10 has_ring = no }
+	planet = { name = "Puck" class = "pc_iceteroid_hab" orbit_distance = 30 orbit_angle = 10 size = 8 has_ring = no planet_size = 9
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Miranda" class = "pc_icy_airless_hab" orbit_distance = 10 orbit_angle = 100 size = 10 has_ring = no planet_size = 14
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 	planet = { name = "Ariel" class = "pc_icy_airless" orbit_distance = 10 orbit_angle = 150 size = 20 has_ring = no 
-		moon = { name = "Yangoon" class = "pc_icy_airless_region" orbit_distance = 5 has_ring = no }
-		moon = { name = "Laica" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no }
+		moon = { name = "Yangoon" class = "pc_icy_airless_region" orbit_distance = 5 has_ring = no planet_size = 13
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+		moon = { name = "Laica" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no planet_size = 12
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 	}
 	planet = { name = "Umbriel" class = "pc_icy_airless" orbit_distance = 10 orbit_angle = 180 size = 20 has_ring = no
-		moon = { name = "Setebos" class = "pc_icy_airless_region" orbit_distance = 5 has_ring = no }
-		moon = { name = "Skynd" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no }
+		moon = { name = "Setebos" class = "pc_icy_airless_region" orbit_distance = 5 has_ring = no planet_size = 11
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+		moon = { name = "Skynd" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no planet_size = 11
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 	}
 	planet = { name = "Titania" class = "pc_icy_airless" orbit_distance = 10 orbit_angle = 50 size = 20 has_ring = no 
-		moon = { name = "Jessica" class = "pc_icy_airless_region" orbit_distance = 5 has_ring = no }
-		moon = { name = "Messina Chasmata" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no }
+		moon = { name = "Jessica" class = "pc_icy_airless_region" orbit_distance = 5 has_ring = no planet_size = 9
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+		moon = { name = "Messina Chasmata" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no planet_size = 8
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 	}
 	planet = { name = "Oberon" class = "pc_icy_airless" orbit_distance = 10 orbit_angle = 200 size = 20 has_ring = no 
-		moon = { name = "Macbeth" class = "pc_icy_airless_region" orbit_distance = 5 has_ring = no }
-		moon = { name = "Mommur Chasmata" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no }
+		moon = { name = "Macbeth" class = "pc_icy_airless_region" orbit_distance = 5 has_ring = no planet_size = 11
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+		moon = { name = "Mommur Chasmata" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no planet_size = 9
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 	}
 }
 neptune_initializer = { 
 	name = "Neptune" class = "sc_neptunian"
 	
-	planet = { name = "Neptune" class = "pc_neptunian" orbit_distance = 1 orbit_angle = 270 size = 50 has_ring = no }
-	planet = { name = "Proteus" class = "pc_iceteroid_hab" orbit_distance = 20 orbit_angle = 120 size = 8 has_ring = no }
+	planet = { name = "Neptune" class = "pc_neptunian" orbit_distance = 1 orbit_angle = 270 size = 50 has_ring = no entity = "neptune_entity" }
+	planet = { name = "Proteus" class = "pc_iceteroid_hab" orbit_distance = 20 orbit_angle = 120 size = 8 has_ring = no planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 	planet = { name = "Triton" class = "pc_icy_airless" orbit_distance = 20 orbit_angle = 90 size = 15 has_ring = no
-		moon = { name = "Abatos Planum" class = "pc_icy_airless_region" orbit_distance = 5 has_ring = no }
-		moon = { name = "Uhlanga Regio" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no }
-		moon = { name = "Bubenbi Regio" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no }
-		moon = { name = "Awib Dorsa" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no }
+		moon = { name = "Abatos Planum" class = "pc_icy_airless_region" orbit_distance = 5 has_ring = no planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+		moon = { name = "Uhlanga Regio" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no planet_size = 11
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+		moon = { name = "Bubenbi Regio" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no planet_size = 9
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+		moon = { name = "Awib Dorsa" class = "pc_icy_airless_region" orbit_distance = 0 has_ring = no planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 	}
-	planet = { name = "Nereid" class = "pc_iceteroid_hab" orbit_distance = 20 orbit_angle = 120 size = 8 has_ring = no }
+	planet = { name = "Nereid" class = "pc_iceteroid_hab" orbit_distance = 20 orbit_angle = 120 size = 8 has_ring = no planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 }
 pluto_initializer = { 
 	name = "134340 Pluto" class = "sc_icy_airless"
 	
-	planet = { name = "Pluto" class = "pc_icy_airless_hab" orbit_distance = 20 orbit_angle = 0 size = 20 has_ring = no }
-	planet = { name = "Charon" class = "pc_icy_airless_hab" orbit_distance = 40 orbit_angle = 180 size = 10 has_ring = no }
+	planet = { name = "Pluto" class = "pc_icy_airless_hab" orbit_distance = 20 orbit_angle = 0 size = 20 has_ring = no planet_size = 11
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Charon" class = "pc_icy_airless_hab" orbit_distance = 40 orbit_angle = 180 size = 10 has_ring = no planet_size = 8
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 }
 eris_initializer = { 
 	name = "136199 Eris" class = "sc_iceteroid"
 	
-	planet = { name = "136199 Eris" class = "pc_iceteroid_hab" orbit_distance = 1 orbit_angle = 90 size = 10 has_ring = no }
-	planet = { name = "Dysnomia" class = "pc_iceteroid_hab" orbit_distance = 40 orbit_angle = 270 size = 8 has_ring = no }
+	planet = { name = "136199 Eris" class = "pc_iceteroid_hab" orbit_distance = 1 orbit_angle = 90 size = 10 has_ring = no planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Dysnomia" class = "pc_iceteroid_hab" orbit_distance = 40 orbit_angle = 270 size = 8 has_ring = no planet_size = 4
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 }
 
 #Additional main-belt objects
 
 pallas_initializer = {
 	name = "2 Pallas" class = "sc_asteroidc"
-	planet = { name = "2 Pallas" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no }
+	planet = { name = "2 Pallas" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no  planet_size = 12
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 }
 hygiea_initializer = {
 	name = "10 Hygiea" class = "sc_asteroidc"
-	planet = { name = "10 Hygiea" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no }
+	planet = { name = "10 Hygiea" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no  planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 }
 interamnia_initializer = {
 	name = "704 Interamnia" class = "sc_asteroidc"
-	planet = { name = "704 Interamnia" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no }
+	planet = { name = "704 Interamnia" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no  planet_size = 11
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 }
 europa_initializer = {
 	name = "52 Europa" class = "sc_asteroidc"
-	planet = { name = "52 Europa" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no }
+	planet = { name = "52 Europa" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no  planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 }
 davida_initializer = {
 	name = "511 Davida" class = "sc_asteroidc"
-	planet = { name = "511 Davida" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no home_planet = yes }
+	planet = { name = "511 Davida" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no home_planet = yes  planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 }
 sylvia_initializer = {
 	name = "87 Sylvia" class = "sc_asteroidc"
-	planet = { name = "87 Sylvia" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 15 has_ring = no }
-	planet = { name = "Remus" class = "pc_asteroid_hab" orbit_distance = 20 orbit_angle = 100 size = 10 has_ring = no }
-	planet = { name = "Romulus" class = "pc_asteroid_hab" orbit_distance = 20 orbit_angle = 100 size = 10 has_ring = no }
+	planet = { name = "87 Sylvia" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 15 has_ring = no  planet_size = 13
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Remus" class = "pc_asteroid_hab" orbit_distance = 20 orbit_angle = 100 size = 10 has_ring = no  planet_size = 5
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Romulus" class = "pc_asteroid_hab" orbit_distance = 20 orbit_angle = 100 size = 10 has_ring = no  planet_size = 4
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 }
 cybele_initializer = {
 	name = "65 Cybele" class = "sc_asteroidc"
-	planet = { name = "65 Cybele" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no home_planet = yes }
+	planet = { name = "65 Cybele" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no home_planet = yes  planet_size = 12
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 }
 eunomia_initializer = {
 	name = "15 Eunomia" class = "sc_asteroidc"
-	planet = { name = "15 Eunomia" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no home_planet = yes }
+	planet = { name = "15 Eunomia" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no home_planet = yes  planet_size = 11
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 }
 juno_initializer = {
 	name = "3 Juno" class = "sc_asteroidc"
-	planet = { name = "3 Juno" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no home_planet = yes }
+	planet = { name = "3 Juno" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no home_planet = yes  planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 }
 euphrosyne_initializer = {
 	name = "31 Euphrosyne" class = "sc_asteroidc"
-	planet = { name = "31 Euphrosyne" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no home_planet = yes }
+	planet = { name = "31 Euphrosyne" class = "pc_asteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no home_planet = yes  planet_size = 10
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 }
 
 #Additional Kuiper Belt objects
 
 makemake_initializer = {
 	name = "136472 Makemake" class = "sc_iceteroid"
-	planet = { name = "136472 Makemake" class = "pc_iceteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no }
+	planet = { name = "136472 Makemake" class = "pc_iceteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no  planet_size = 12
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 	planet = { name = "MK 2" class = "pc_iceteroid" orbit_distance = 20 orbit_angle = 70 size = 4 has_ring = no }
 }
 haumea_initializer = {
 	name = "136108 Haumea" class = "sc_iceteroid"
-	planet = { name = "136108 Haumea" class = "pc_iceteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no }
+	planet = { name = "136108 Haumea" class = "pc_iceteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 10 has_ring = no  planet_size = 13
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 	planet = { name = "Hi'iaka" class = "pc_iceteroid" orbit_distance = 30 orbit_angle = 100 size = 4 has_ring = no }
 	planet = { name = "Namaka" class = "pc_iceteroid" orbit_distance = 30 orbit_angle = 120 size = 4 has_ring = no }
 }
 orcus_initializer = {
 	name = "90482 Orcus" class = "sc_iceteroid"
-	planet = { name = "90482 Orcus" class = "pc_iceteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 12 has_ring = no }
-	planet = { name = "Vanth" class = "pc_iceteroid_hab" orbit_distance = 20 orbit_angle = 30 size = 6 has_ring = no }
+	planet = { name = "90482 Orcus" class = "pc_iceteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 12 has_ring = no  planet_size = 13
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
+	planet = { name = "Vanth" class = "pc_iceteroid_hab" orbit_distance = 20 orbit_angle = 30 size = 6 has_ring = no  planet_size = 9
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 }
 quaoar_initializer = {
 	name = "50000 Quaoar" class = "sc_iceteroid"
-	planet = { name = "50000 Quaoar" class = "pc_iceteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 12 has_ring = no }
+	planet = { name = "50000 Quaoar" class = "pc_iceteroid_hab" orbit_distance = 1 orbit_angle = 1 size = 12 has_ring = no  planet_size = 8
+			init_effect = {
+				add_modifier = {
+					modifier = "very_low_g"
+					days = -1
+				}
+			}
+		}
 	planet = { name = "Weywot" class = "pc_iceteroid" orbit_distance = 20 orbit_angle = 30 size = 4 has_ring = no }
 }

@@ -1,0 +1,155 @@
+d_asteroid_desposit = {
+	resources = { minerals = 4 }
+	is_orbital_slot = no
+	station = shipclass_mining_station
+	orbital_weight = {
+		weight = 10
+	}
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 10000
+			planet = {
+				OR = {
+					is_planet_class = pc_asteroid_hab
+					
+				}
+			}
+		}
+	}
+}
+
+d_iceteroid_deposit = {
+	resources = { minerals = 2 energy = 1 }
+	is_orbital_slot = no
+	station = shipclass_mining_station
+	orbital_weight = {
+		weight = 10
+	}
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 10000
+			planet = {
+				OR = {
+					is_planet_class = pc_iceteroid_hab
+					
+				}
+			}
+		}
+	}
+}
+
+d_rocky_deposit = {
+	resources = { minerals = 2 energy = 1 }
+	is_orbital_slot = no
+	station = shipclass_mining_station
+	orbital_weight = {
+		weight = 10
+	}
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 10000
+			planet = {
+				OR = {
+					is_planet_class = pc_rocky_airless_region
+					is_planet_class = pc_rocky_atmosphere_region
+					is_planet_class = pc_rocky_airless_hab
+					is_planet_class = pc_rocky_atmosphere_hab
+					
+				}
+			}
+		}
+	}
+}
+
+d_icy_deposit = {
+	resources = { minerals = 1 energy = 2 }
+	is_orbital_slot = no
+	station = shipclass_mining_station
+	orbital_weight = {
+		weight = 10
+	}
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 10000
+			planet = {
+				OR = {
+					is_planet_class = pc_icy_airless_region
+					is_planet_class = pc_icy_atmosphere_region
+					is_planet_class = pc_icy_airless_hab
+					is_planet_class = pc_icy_atmosphere_hab
+				}
+			}
+		}
+	}
+}
+
+d_warm_deposit = {
+	resources = { minerals = 1 energy = 1 food = 2 }
+	is_orbital_slot = no
+	station = shipclass_mining_station
+	orbital_weight = {
+		weight = 10
+	}
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 10000
+			planet = {
+				OR = {
+					is_planet_class = pc_warm_region
+				}
+			}
+		}
+	}
+}
+
+d_temperate_deposit = {
+	resources = { minerals = 1 energy = 1 food = 2 }
+	is_orbital_slot = no
+	station = shipclass_mining_station
+	orbital_weight = {
+		weight = 10
+	}
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 10000
+			planet = {
+				OR = {
+					is_planet_class = pc_temperate_region
+				}
+			}
+		}
+	}
+}
+
+d_cold_deposit = {
+	resources = { minerals = 1 energy = 1 }
+	is_orbital_slot = no
+	station = shipclass_mining_station
+	orbital_weight = {
+		weight = 10
+	}
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 10000
+			planet = {
+				OR = {
+					is_planet_class = pc_cold_region
+				}
+			}
+		}
+	}
+}

@@ -30,6 +30,37 @@ light = {
 }
 
 light = {
+	name = "earthlike_light"
+	
+	color = { 
+		r = { 1.0 }
+		g = { 0.9 }
+		b = { 0.7 }
+	}
+	
+	intensity = 3.5, fade
+	radius = 10000
+	falloff = 0
+	
+	position = { x = 0 y = -4 z = -500 }
+
+	animation = {
+		name = "fade"
+		start = 0
+		duration = 4
+		repeat = yes
+		op = "MUL" # "MUL"/"ADD"/"ABS"
+		minValue = 0.8
+		maxValue = 1
+		curve = { 
+			0	0.8 
+			0.4	1
+			1	0.8
+		}
+	}	
+}
+
+light = {
 	name = "rocky_airless_light"
 	
 	color = { 
@@ -61,6 +92,24 @@ light = {
 
 light = {
 	name = "mars_light"
+
+	color = { 
+		r = { 0.9 }
+		g = { 0.9 }
+		b = { 0.9 }
+	}
+		
+	intensity = 2.5
+	#intensity = 4.5
+	radius = 10000
+	falloff = 0
+	
+	position = { x = 150 y = 2 z = 500 }
+	
+}
+
+light = {
+	name = "rocky_atmosphere_light"
 
 	color = { 
 		r = { 0.9 }

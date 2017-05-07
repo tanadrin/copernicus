@@ -1,0 +1,60 @@
+#Copernicus planetary modifiers
+#(see also the static modifiers file)
+pm_very_low_g = {
+	spawn_chance = {
+	}
+	modifier = "very_low_g"
+}
+pm_low_g = {
+	spawn_chance = {
+	}
+	modifier = "low_g"
+}
+
+pm_high_g = {
+	spawn_chance = {
+	}
+	modifier = "high_g"
+}
+
+#From Jupiter's magnetic field
+pm_radiation_field = {
+	spawn_chance = {
+	}
+	modifier = "radiation_field"
+}
+
+#Titan
+pm_hydrocarbon_chemistry = {
+	spawn_chance = {
+	}
+	modifier = "hydrocarbon_chemistry"
+}
+
+#Various moons
+pm_subsurface_seas = {
+	spawn_chance = {
+	}
+	modifier = "subsurface_seas"
+}
+
+#M-class worlds
+pm_alien_biosphere = {
+	spawn_chance = {
+	}
+	modifier = "alien_biosphere"
+}
+
+#Circumstellar worlds
+pm_high_temperatures = {
+	spawn_chance = {
+	}
+	modifier = "high_temperatures"
+}
+
+#Copernicus version of this modifier
+pm_locked = {
+	spawn_chance = {
+	}
+	modifier = "locked"
+}
